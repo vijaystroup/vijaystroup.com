@@ -1,0 +1,22 @@
+__      __ _  _                  _____  _                             
+\ \    / /(_)(_)                / ____|| |                            
+ \ \  / /  _  _   __ _  _   _  | (___  | |_  _ __  ___   _   _  _ __  
+  \ \/ /  | || | / _` || | | |  \___ \ | __|| '__|/ _ \ | | | || '_ \ 
+   \  /   | || || (_| || |_| |  ____) || |_ | |  | (_) || |_| || |_) |
+    \/    |_|| | \__,_| \__, | |_____/  \__||_|   \___/  \__,_|| .__/ 
+            _/ |         __/ |                                 | |    
+           |__/         |___/                                  |_|    
+
+Hi! My name is Vijay Stroup and I'm a student studying physics and computer science.
+I love programming - my favorite language is Python, thus this website is based on a terminal emulator.
+
+To navigate around my website the available commands are:
+        - <clear>             : clear all previous outputs.
+        - <ls>                : list files in current directory.
+        - <cd> [..][dir_name] : change directories.
+        - <cat> [file_name]   : read contents of file.
+
+Color Legend:
+        - Green : directories
+        - White : file
+        - Blue  : clickable links

@@ -1,0 +1,16 @@
+body
+{
+    background: black;
+    color: white;
+}
+
+#guest-connection
+{
+    color: #3ec92e;
+}
+
+input
+{
+    caret-color: rgb(0, 200, 0);
+    
+}
