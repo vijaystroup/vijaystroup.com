@@ -1,13 +1,9 @@
 {
-    "home":
+    "projects":
     {
-       "projects":
-        {
-            "cupid": "cupid.txt",
-            "offlinepass": "offlinepass.txt"
-        },
-        "about": "about.txt",
-        "contact": "contact.txt"
-    }
+        "cupid": "cupid.txt",
+        "offlinepass": "offlinepass.txt"
+    },
+    "about": "about.txt",
+    "contact": "contact.txt"
 }
-

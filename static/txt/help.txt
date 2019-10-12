@@ -8,15 +8,16 @@ __      __ _  _                  _____  _
            |__/         |___/                                  |_|    
 
 Hi! My name is Vijay Stroup and I'm a student studying physics and computer science.
-I love programming - my favorite language is Python, thus this website is based on a terminal emulator.
+I love programming and science!
 
-To navigate around my website the available commands are:
-        - <clear>             : clear all previous outputs.
-        - <ls>                : list files in current directory.
-        - <cd> [..][dir_name] : change directories.
-        - <cat> [file_name]   : read contents of file.
+To navigate around my website, the available commands are:
+        - help              : show help.
+        - clear             : clear the screen.
+        - ls                : list files in current directory.
+        - cd [..][dir_name] : change directories.
+        - cat [file_name]   : read contents of file.
 
 Color Legend:
-        - Green : directories
-        - White : file
-        - Blue  : clickable links
+        - <span style="color:#3ec92e">Green</span> : directories
+        - <span style="color:white">White</span> : files
+        - <span style="color:#00A2FF">Blue</span>  : clickable links

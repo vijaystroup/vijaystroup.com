@@ -1,6 +1,16 @@
 {% extends "layout.html" %}
 
     {% block content %}
-        <pre class="content" id="home-from-txt">{{home_data}}</pre>
-        <br id="break-after-home-text">
+        <script type="text/javascript">
+            function jinja_to_js(data){
+                return data;
+            }
+            const help_text = jinja_to_js({{help_text|tojson}});
+            const about_text = jinja_to_js({{about_text|tojson}});
+        </script>
+
+        <div class="content">
+            <p class="terminal" id="path">guest@vijaystroup:~$</p>
+            <input type="text" class="terminal" id="command-line" autofocus>
+        </div>
     {% endblock content %}

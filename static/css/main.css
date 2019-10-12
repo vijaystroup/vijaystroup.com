@@ -9,8 +9,24 @@ body
     color: #3ec92e;
 }
 
-input
+.terminal
 {
-    caret-color: rgb(0, 200, 0);
-    
+    /* position: relative; */
+    display: inline-flex;
+}
+
+#path
+{
+    padding-right: 10px;
+}
+
+#command-line
+{
+    caret-color: red;
+    height: 5%;
+}
+
+hr
+{
+    border-style: none;
 }

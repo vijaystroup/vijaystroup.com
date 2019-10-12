@@ -10,7 +10,8 @@ app = Flask(__name__)
 def home():
     return render_template(
         'home.html',
-        home_data=load_txts.data
+        help_text=load_txts.help_text,
+        about_text=load_txts.about_text,
     )
 
 
