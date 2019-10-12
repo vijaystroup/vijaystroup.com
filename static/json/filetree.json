@@ -1,9 +1,15 @@
 {
+    "~":
+    {
+        "PARENT_DIR": "~",
+        "projects": "DIR",
+        "about": "about.txt",
+        "contact": "contact.txt"
+    },
     "projects":
     {
+        "PARENT_DIR": "~",
         "cupid": "cupid.txt",
         "offlinepass": "offlinepass.txt"
-    },
-    "about": "about.txt",
-    "contact": "contact.txt"
+    }
 }
