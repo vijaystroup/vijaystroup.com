@@ -15,4 +15,12 @@ def read_json(filename):
 
 help_text = read_txt('/d/python/vijaystroupCOM/static/txt/help.txt')
 about_text = read_txt('/d/python/vijaystroupCOM/static/txt/about.txt')
+contact_text = read_txt('/d/python/vijaystroupCOM/static/txt/contact.txt')
+cupid_text = read_txt('/d/python/vijaystroupCOM/static/txt/cupid.txt')
+offlinepass_text = read_txt(
+    '/d/python/vijaystroupCOM/static/txt/offlinepass.txt'
+)
+vijaystroupCOM_text = read_txt(
+    '/d/python/vijaystroupCOM/static/txt/vijaystroupCOM.txt'
+)
 file_tree = read_json('/d/python/vijaystroupCOM/static/json/filetree.json')

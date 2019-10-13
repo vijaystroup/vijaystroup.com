@@ -1,4 +1,4 @@
-body
+*
 {
     background: black;
     color: white;
@@ -7,6 +7,12 @@ body
 #guest-connection
 {
     color: #3ec92e;
+}
+
+#command-line
+{
+    background-color: none;
+    border: none;
 }
 
 .terminal

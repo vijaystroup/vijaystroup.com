@@ -1,14 +1,22 @@
 $(document).ready( function()
 {
+    // global constants
     const getip_url = 'http://ip-api.com/json';
     const valid_cmds = ['clear', 'ls', 'cd', 'cat', 'help'];
 
     $.get(getip_url, function (data)
         {
+            /**
+            This function is used for getting client data to display.
+
+            */
+
             $('.content').prepend('<p id="guest-connection">' + 
                 'Guest connected as ' + data.query + ' from ' + data.regionName + '...'
             );
         }, 'json');
+
+    // page init
     $('.content').prepend('<pre>' + help_txt);
     let path = cur_dir()
 
@@ -16,8 +24,31 @@ $(document).ready( function()
     let input = document.getElementById('command-line');
     input.addEventListener('keypress', command_line_event);
 
+    document.body.addEventListener('mouseup', () =>
+    {
+        /**
+        This function is used for copying highlighted text and for focusing
+        the last input when clicked on the page.
+
+        */
+
+        // get last #command-line to focus it
+        const command_lines = document.querySelectorAll("#command-line");
+        const last_cmd_line = command_lines[command_lines.length - 1];
+
+        // copy highlighted text and focus #command-line
+        document.execCommand('copy');
+        $(last_cmd_line).focus();
+    }, true);
+
     function cur_dir()
     {
+        /**
+        This function is used for getting what directory the client is
+        currently in for a various amount of uses.
+
+        */
+
         let path = document.querySelectorAll("#path");
         try
         {
@@ -40,6 +71,10 @@ $(document).ready( function()
 
     function command_line_event (event)
     {
+        /**
+        This function is used for handling client input to $command-line.
+
+        */
         if (event.keyCode === 13)
         {
             // settings

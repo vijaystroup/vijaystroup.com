@@ -21,3 +21,6 @@ Color Legend:
         - <span style="color:#3ec92e;">Green</span> : directories
         - <span style="color:white;">White</span> : files
         - <span style="color:#00A2FF;">Blue</span>  : clickable links
+
+Notes:
+        - To copy text to the clipboard, simply highlight the text on the page.
