@@ -57,9 +57,24 @@ $(document).ready( function()
                 }
                 else if (command_prefix === valid_cmds[1]) // ls
                 {
-                    console.log('ls');
-                    // get current directory
-                    // list all files/directores in that directory
+                    path = cur_dir();
+                    for (const key in file_tree[path])
+                    {
+                        val = file_tree[path][key]
+                        if (val === 'DIR')
+                        {
+                            $('.content').append('<p class="ls-out" id="ls-dir">' + key + '/');
+                        }
+                        else if (val.slice(-4) === '.txt')
+                        {
+                            $('.content').append('<p class="ls-out">' + val);
+                        }
+                    }
+
+                    if (path != '~')
+                    {
+                        path = '~/' + path;
+                    }
                 }                
                 else if (command_prefix === valid_cmds[2]) // cd
                 {
@@ -97,7 +112,7 @@ $(document).ready( function()
                             }
                             else
                             {
-                                path = '~/' + cur_dir();
+                                path = cur_dir();
                                 throw new Error('Not a directory.');
                             }
                         }
@@ -110,8 +125,25 @@ $(document).ready( function()
                 else if (command_prefix === valid_cmds[3]) // cat
                 {
                     console.log('cat');
-                    // get current directory
-                    // display file if present in directory
+                    path = cur_dir();
+
+                    try
+                    {
+                        for (const key in file_tree[path])
+                        {
+                            const val = file_tree[path][key];
+                            if (val.slice(-4) === '.txt')
+                            {
+                                console.log(val);
+                            }                            
+                        }
+                    }
+                    catch(err)
+                    {
+                        console.log('file does not exist.')
+                    }
+
+
                 }
                 else if (command_prefix === valid_cmds[4]) // help
                 {
@@ -128,7 +160,14 @@ $(document).ready( function()
             $('.content').append('<hr/>');
             if (command_prefix === '')
             {
-                $('.content').append('<p class="terminal" id="path">guest@vijaystroup:' + cur_dir() + '$');
+                if (cur_dir() != '~')
+                {
+                    $('.content').append('<p class="terminal" id="path">guest@vijaystroup:~/' + cur_dir() + '$');
+                }
+                else
+                {
+                    $('.content').append('<p class="terminal" id="path">guest@vijaystroup:' + cur_dir() + '$');
+                }
             }
             else
             {

@@ -30,3 +30,13 @@ hr
 {
     border-style: none;
 }
+
+#ls-dir
+{
+    color: #3ec92e;
+}
+
+.ls-out
+{
+    /* display: inline-flex; */
+}
