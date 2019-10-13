@@ -10,6 +10,7 @@ $(document).ready( function()
             );
         }, 'json');
     $('.content').prepend('<pre>' + help_txt);
+    let path = cur_dir()
 
     // init input event
     let input = document.getElementById('command-line');
@@ -160,22 +161,17 @@ $(document).ready( function()
                 }
                 else if (command_prefix === valid_cmds[4]) // help
                 {
-                    console.log('help');
                     $('.content').append('<pre>' + help_txt);
                 }
             }
             else
             {
-                if (command_prefix != undefined)
+                console.log(command_prefix)
+                if (command_prefix === ''){}
+                else
                 {
                     $('.content').append('<p>' + command_prefix + ': command not found');
                 }
-                console.log(path);
-
-                // if (path === '~')
-                // {
-                //     path = '~';
-                // }
             }
 
             // add new contents
