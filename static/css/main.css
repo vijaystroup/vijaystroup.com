@@ -1,42 +1,53 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css?family=Rokkitt&display=swap');
+
+/* globals */
 *
 {
     background: black;
     color: white;
+    padding: none;
 }
 
+a
+{
+    text-decoration: none;
+}
+
+/* client info upon connect */
 #guest-connection
 {
-    color: #3ec92e;
+    color: red;
+    font-family: 'Rokkitt', serif;
 }
 
-#command-line
-{
-    background-color: none;
-    border: none;
-}
-
+/* terminal */
 .terminal
 {
-    /* position: relative; */
-    display: inline-flex;
-}
-
-#path
-{
-    padding-right: 10px;
-}
-
-#command-line
-{
-    caret-color: red;
-    height: 5%;
+    display: inline;
 }
 
 hr
 {
     border-style: none;
+    margin: 0%;
 }
 
+#command-line, #command-line:focus
+{
+    background-color: none;
+    border: none;
+    outline: none;
+    caret-color: red;
+}
+
+#path
+{
+    padding-right: 8px;
+    color: #CCCCCC;
+}
+
+/* output */
 #ls-dir
 {
     color: #3ec92e;
@@ -44,10 +55,6 @@ hr
 
 .ls-out
 {
-    /* display: inline-flex; */
-}
-
-a
-{
-    text-decoration: none;
+    display: inline-flex;
+    padding-right: 4%;
 }

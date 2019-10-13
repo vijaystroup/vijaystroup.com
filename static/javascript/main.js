@@ -24,7 +24,7 @@ $(document).ready( function()
     let input = document.getElementById('command-line');
     input.addEventListener('keypress', command_line_event);
 
-    document.body.addEventListener('mouseup', () =>
+    document.addEventListener('mouseup', () =>
     {
         /**
         This function is used for copying highlighted text and for focusing
@@ -35,6 +35,7 @@ $(document).ready( function()
         // get last #command-line to focus it
         const command_lines = document.querySelectorAll("#command-line");
         const last_cmd_line = command_lines[command_lines.length - 1];
+        console.log(last_cmd_line);
 
         // copy highlighted text and focus #command-line
         document.execCommand('copy');
@@ -94,6 +95,7 @@ $(document).ready( function()
                 else if (command_prefix === valid_cmds[1]) // ls
                 {
                     path = cur_dir();
+                    $('.content').append('<hr/>');
                     for (const key in file_tree[path])
                     {
                         val = file_tree[path][key]
@@ -215,18 +217,18 @@ $(document).ready( function()
             {
                 if (cur_dir() != '~')
                 {
-                    $('.content').append('<p class="terminal" id="path">guest@vijaystroup:~/' + cur_dir() + '$');
+                    $('.content').append('<p class="terminal" id="path">guest@vijaystroup.com:~/' + cur_dir() + '$');
                 }
                 else
                 {
-                    $('.content').append('<p class="terminal" id="path">guest@vijaystroup:' + cur_dir() + '$');
+                    $('.content').append('<p class="terminal" id="path">guest@vijaystroup.com:' + cur_dir() + '$');
                 }
             }
             else
             {
-                $('.content').append('<p class="terminal" id="path">guest@vijaystroup:' + path + '$');
+                $('.content').append('<p class="terminal" id="path">guest@vijaystroup.com:' + path + '$');
             }
-            $('.content').append('<input type="text" class="terminal" id="command-line">');
+            $('.content').append('<input type="text" class="terminal" id="command-line" spellcheck="false">');
 
             // add event listener to new input and focus it
             input = document.querySelectorAll("#command-line:last-child")[0];
