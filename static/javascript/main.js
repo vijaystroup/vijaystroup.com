@@ -9,7 +9,7 @@ $(document).ready( function()
                 'Guest connected as ' + data.query + ' from ' + data.regionName + '.'
             );
         }, 'json');
-    $('.content').prepend('<pre>' + help_text);
+    $('.content').prepend('<pre>' + help_txt);
 
     // init input event
     let input = document.getElementById('command-line');
@@ -124,36 +124,58 @@ $(document).ready( function()
                 }
                 else if (command_prefix === valid_cmds[3]) // cat
                 {
-                    console.log('cat');
-                    path = cur_dir();
-
-                    try
+                    if (command_suffix == undefined || command_suffix === '')
                     {
+                        console.log('no file input');
+                    }
+                    else
+                    {
+                        path = cur_dir();
+                        let available_txts = [];
+    
                         for (const key in file_tree[path])
                         {
                             const val = file_tree[path][key];
                             if (val.slice(-4) === '.txt')
                             {
-                                console.log(val);
+                                available_txts.push(val);
                             }                            
                         }
+                        
+                        if (available_txts.includes(command_suffix))
+                        {
+                            const file = command_suffix.replace(/\./g, '_')
+                            $('.content').append('<p>' + eval(file));
+                        }
+                        else
+                        {
+                            $('.content').append('<p>' + command_prefix + ': ' + command_suffix + ': No such file.');
+                        }
+    
+                        if (path != '~')
+                        {
+                            path = '~/' + path;
+                        }
                     }
-                    catch(err)
-                    {
-                        console.log('file does not exist.')
-                    }
-
-
                 }
                 else if (command_prefix === valid_cmds[4]) // help
                 {
                     console.log('help');
-                    $('.content').append('<pre>' + help_text);
+                    $('.content').append('<pre>' + help_txt);
                 }
             }
             else
             {
-                console.log('not valid')
+                if (command_prefix != undefined)
+                {
+                    $('.content').append('<p>' + command_prefix + ': command not found');
+                }
+                console.log(path);
+
+                // if (path === '~')
+                // {
+                //     path = '~';
+                // }
             }
 
             // add new contents
