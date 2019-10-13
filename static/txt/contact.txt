@@ -1,0 +1,5 @@
+- Email     : <a href="mailto:vijaystroup@gmail.com" target="_blank"><span style="color:#00A2FF;">vijaystroup@gmail.com</span></a>
+
+- Bitbucket : <a href="https://bitbucket.org/vijaystroup/" target="_blank"><span style="color:#00A2FF;">vijaystroup</span></a>
+- GitHub    : <a href="https://github.com/VijayStroup" target="_blank"><span style="color:#00A2FF;">VijayStroup</span></a>
+- GitLab    : <a href="https://gitlab.com/VijayStroup" target="_blank"><span style="color:#00A2FF;">VijayStroup</span></a>

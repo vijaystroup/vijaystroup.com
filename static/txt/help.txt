@@ -18,6 +18,6 @@ To navigate around my website, the available commands are:
         - cat [file_name]   : read contents of file.
 
 Color Legend:
-        - <span style="color:#3ec92e">Green</span> : directories
-        - <span style="color:white">White</span> : files
-        - <span style="color:#00A2FF">Blue</span>  : clickable links
+        - <span style="color:#3ec92e;">Green</span> : directories
+        - <span style="color:white;">White</span> : files
+        - <span style="color:#00A2FF;">Blue</span>  : clickable links

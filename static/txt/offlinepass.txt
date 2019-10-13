@@ -1,0 +1,19 @@
+OFFLINE PASS
+============
+
+Overview
+--------
+Offline Pass is an offline password manager. This means none of your information is
+stored in the 'cloud'. Even with your information being stored locally, all data
+is either hashed or encrypted (no plain text anywhere).
+
+Language(s) & Unique Features
+-----------------------------
+- Python, SQLite
+
+- Modern password storing (e.g. hashing and encryption).
+- Windows installer for Offline Pass - <span style="font-weight:900;">Python</span> is not required.
+
+Links
+-----
+- <a href="https://github.com/VijayStroup/Offline-Pass" target="_blank"><span style="color:#00A2FF;">GitHub</span></a>

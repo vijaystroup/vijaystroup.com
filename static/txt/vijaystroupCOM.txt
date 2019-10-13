@@ -1,0 +1,22 @@
+VIJAYSTROUP.COM
+===============
+
+Overview
+--------
+vijaystroup.com is my personal website. This is a central hub where all my projects are located
+and ways in which to get in contact with me.
+With the combination of not being a good graphic designer and having a technical background, the
+best solution I thought of for my website was a design that simulated a terminal emulator.
+
+Language(s) & Unique Features
+-----------------------------
+- Python, JavaScript, HTML, CSS, JSON
+
+- Flask for handling web configuration.
+- Python and javascript interaction.
+- Simulated terminal emulator.
+
+Links
+-----
+- <a href="https://github.com/VijayStroup/vijaystroupCOM" target="_blank"><span style="color:#00A2FF;">GitHub</span></a>
+- <a href="/" target="_blank"><span style="color:#00A2FF;">vijaystroup.com</span></a>

@@ -6,7 +6,7 @@ $(document).ready( function()
     $.get(getip_url, function (data)
         {
             $('.content').prepend('<p id="guest-connection">' + 
-                'Guest connected as ' + data.query + ' from ' + data.regionName + '.'
+                'Guest connected as ' + data.query + ' from ' + data.regionName + '...'
             );
         }, 'json');
     $('.content').prepend('<pre>' + help_txt);
@@ -119,7 +119,7 @@ $(document).ready( function()
                         }
                         catch(err)
                         {
-                            console.log('no listings');
+                            $('.content').append('<p>' + command_prefix + ': ' + command_suffix + ': No such file or directory.');
                         }
                     }
                 }
@@ -146,7 +146,7 @@ $(document).ready( function()
                         if (available_txts.includes(command_suffix))
                         {
                             const file = command_suffix.replace(/\./g, '_')
-                            $('.content').append('<p>' + eval(file));
+                            $('.content').append('<pre>' + eval(file));
                         }
                         else
                         {

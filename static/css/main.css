@@ -40,3 +40,8 @@ hr
 {
     /* display: inline-flex; */
 }
+
+a
+{
+    text-decoration: none;
+}
