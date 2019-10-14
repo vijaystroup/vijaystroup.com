@@ -14,6 +14,11 @@ a
     text-decoration: none;
 }
 
+#ie-warning
+{
+    color: red;
+}
+
 /* client info upon connect */
 #guest-connection
 {
@@ -58,3 +63,9 @@ hr
     display: inline-flex;
     padding-right: 4%;
 }
+
+/*  */
+/* make input full width of screen */
+/* if command has stuff after command_suffix */
+/* make cd projects/ work not just cd projects */
+/*  */

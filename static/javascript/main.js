@@ -1,7 +1,18 @@
 $(document).ready( function()
 {
+    // let users know IE does not support some modern javascript functions
+    // therefore website will not work correctly for that browser
+    const isIE = /*@cc_on!@*/false || !!document.documentMode;
+    if (isIE)
+    {
+        const warning_node = document.createElement('h1');
+        warning_node.setAttribute('id', 'ie-warning');
+        document.body.appendChild(warning_node);
+        warning_node.innerText = 'THIS WEBSITE DOES NOT SUPPORT INTERNET EXPLORER.\nPLEASE SWITCH TO ANOTHER BROWSER.';
+    }
+
     // global constants
-    const getip_url = 'http://ip-api.com/json';
+    const getip_url = 'https://ipapi.co/json/';
     const valid_cmds = ['clear', 'ls', 'cd', 'cat', 'help'];
 
     $.get(getip_url, function (data)
@@ -12,7 +23,7 @@ $(document).ready( function()
             */
 
             $('.content').prepend('<p id="guest-connection">' + 
-                'Guest connected as ' + data.query + ' from ' + data.regionName + '...'
+                'Guest connected as ' + data.ip + ' from ' + data.region + '...'
             );
         }, 'json');
 
@@ -24,7 +35,7 @@ $(document).ready( function()
     let input = document.getElementById('command-line');
     input.addEventListener('keypress', command_line_event);
 
-    document.addEventListener('mouseup', () =>
+    document.addEventListener('mouseup', function()
     {
         /**
         This function is used for copying highlighted text and for focusing
@@ -35,7 +46,6 @@ $(document).ready( function()
         // get last #command-line to focus it
         const command_lines = document.querySelectorAll("#command-line");
         const last_cmd_line = command_lines[command_lines.length - 1];
-        console.log(last_cmd_line);
 
         // copy highlighted text and focus #command-line
         document.execCommand('copy');
@@ -96,7 +106,7 @@ $(document).ready( function()
                 {
                     path = cur_dir();
                     $('.content').append('<hr/>');
-                    for (const key in file_tree[path])
+                    for (let key in file_tree[path])
                     {
                         val = file_tree[path][key]
                         if (val === 'DIR')
@@ -156,6 +166,11 @@ $(document).ready( function()
                         }
                         catch(err)
                         {
+                            if (path != '~')
+                            {
+                                path = '~/' + path
+                            }
+
                             $('.content').append('<p>' + command_prefix + ': ' + command_suffix + ': No such file or directory.');
                         }
                     }
@@ -171,7 +186,7 @@ $(document).ready( function()
                         path = cur_dir();
                         let available_txts = [];
     
-                        for (const key in file_tree[path])
+                        for (let key in file_tree[path])
                         {
                             const val = file_tree[path][key];
                             if (val.slice(-4) === '.txt')

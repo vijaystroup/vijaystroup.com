@@ -10,7 +10,7 @@ Programming Languages:
 - <span style="font-weight:900;">Python</span>
 
 Programming Tools:
-- Digital Ocean servers
+- Various 'cloud' servers (e.g. Digital Ocean, Vultur, private servers).
 - Git (including many web-based git control system)
 - Linux command line
 - Visual Studio Code
