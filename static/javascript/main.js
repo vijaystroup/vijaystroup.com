@@ -179,7 +179,7 @@ $(document).ready( function()
                 {
                     if (command_suffix == undefined || command_suffix === '')
                     {
-                        console.log('no file input');
+                        $('.content').append('<p>no file input');
                     }
                     else
                     {
@@ -218,7 +218,6 @@ $(document).ready( function()
             }
             else
             {
-                console.log(command_prefix)
                 if (command_prefix === ''){}
                 else
                 {
@@ -243,7 +242,7 @@ $(document).ready( function()
             {
                 $('.content').append('<p class="terminal" id="path">guest@vijaystroup.com:' + path + '$');
             }
-            $('.content').append('<input type="text" class="terminal" id="command-line" spellcheck="false">');
+            $('.content').append('<input type="text" class="terminal" id="command-line" maxlength="22" spellcheck="false">');
 
             // add event listener to new input and focus it
             input = document.querySelectorAll("#command-line:last-child")[0];

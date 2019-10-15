@@ -30,6 +30,7 @@ a
 .terminal
 {
     display: inline;
+    margin: 0;
 }
 
 hr
@@ -40,7 +41,6 @@ hr
 
 #command-line, #command-line:focus
 {
-    background-color: none;
     border: none;
     outline: none;
     caret-color: red;
@@ -65,7 +65,6 @@ hr
 }
 
 /*  */
-/* make input full width of screen */
 /* if command has stuff after command_suffix */
 /* make cd projects/ work not just cd projects */
 /*  */
