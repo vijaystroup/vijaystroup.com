@@ -100,120 +100,159 @@ $(document).ready( function()
             {
                 if (command_prefix === valid_cmds[0]) // clear
                 {
-                    $(".content").empty();
-                }
-                else if (command_prefix === valid_cmds[1]) // ls
-                {
-                    path = cur_dir();
-                    $('.content').append('<hr/>');
-                    for (let key in file_tree[path])
+                    if (command_suffix)
                     {
-                        val = file_tree[path][key]
-                        if (val === 'DIR')
-                        {
-                            $('.content').append('<p class="ls-out" id="ls-dir">' + key + '/');
-                        }
-                        else if (val.slice(-4) === '.txt')
-                        {
-                            $('.content').append('<p class="ls-out">' + val);
-                        }
-                    }
-
-                    if (path != '~')
-                    {
-                        path = '~/' + path;
-                    }
-                }                
-                else if (command_prefix === valid_cmds[2]) // cd
-                {
-                    path = cur_dir();
-
-                    if (command_suffix == undefined)
-                    {
-                        path = '~';
-                    }
-                    else if (command_suffix === '.')
-                    {
-                        if (path === '~'){}
-                        else
-                        {
-                            path = '~/' + path;
-                        }
-                        
-                    }
-                    else if (command_suffix === '..')
-                    {
-                        if (path === '~'){}
-                        else
-                        {
-                            path = file_tree[path].PARENT_DIR
-                        }
+                        $('.content').append('<p>"'+ command_prefix + '" does not take any arguments.');
                     }
                     else
                     {
-                        try
-                        {
-                            check_if_dir = file_tree[path][command_suffix]
-                            if (check_if_dir === 'DIR')
-                            {
-                                path = '~/' + command_suffix;
-                            }
-                            else
-                            {
-                                path = cur_dir();
-                                throw new Error('Not a directory.');
-                            }
-                        }
-                        catch(err)
-                        {
-                            if (path != '~')
-                            {
-                                path = '~/' + path
-                            }
-
-                            $('.content').append('<p>' + command_prefix + ': ' + command_suffix + ': No such file or directory.');
-                        }
+                        $(".content").empty();
                     }
                 }
-                else if (command_prefix === valid_cmds[3]) // cat
+                else if (command_prefix === valid_cmds[1]) // ls
                 {
-                    if (command_suffix == undefined || command_suffix === '')
+                    if (command_suffix)
                     {
-                        $('.content').append('<p>no file input');
+                        $('.content').append('<p>"'+ command_prefix + '" does not take any arguments.');
                     }
                     else
                     {
                         path = cur_dir();
-                        let available_txts = [];
-    
+                        $('.content').append('<hr/>');
                         for (let key in file_tree[path])
                         {
-                            const val = file_tree[path][key];
-                            if (val.slice(-4) === '.txt')
+                            val = file_tree[path][key]
+                            if (val === 'DIR')
                             {
-                                available_txts.push(val);
-                            }                            
+                                $('.content').append('<p class="ls-out" id="ls-dir">' + key + '/');
+                            }
+                            else if (val.slice(-4) === '.txt')
+                            {
+                                $('.content').append('<p class="ls-out">' + val);
+                            }
                         }
-                        
-                        if (available_txts.includes(command_suffix))
-                        {
-                            const file = command_suffix.replace(/\./g, '_')
-                            $('.content').append('<pre>' + eval(file));
-                        }
-                        else
-                        {
-                            $('.content').append('<p>' + command_prefix + ': ' + command_suffix + ': No such file.');
-                        }
-    
+
                         if (path != '~')
                         {
                             path = '~/' + path;
                         }
                     }
+                }                
+                else if (command_prefix === valid_cmds[2]) // cd
+                {
+                    if (command[2])
+                    {
+                        $('.content').append('<p>"'+ command_prefix + '" only takes one argument.');
+                    }
+                    else
+                    {
+                        path = cur_dir();
+
+                        if (command_suffix == undefined)
+                        {
+                            path = '~';
+                        }
+                        else if (command_suffix === '')
+                        {
+                            path = '~';
+                        }
+                        else if (command_suffix === '.')
+                        {
+                            if (path === '~'){}
+                            else
+                            {
+                                path = '~/' + path;
+                            }
+                            
+                        }
+                        else if (command_suffix === '..')
+                        {
+                            if (path === '~'){}
+                            else
+                            {
+                                path = file_tree[path].PARENT_DIR
+                            }
+                        }
+                        else
+                        {
+                            try
+                            {
+                                check_if_dir = file_tree[path][command_suffix]
+                                if (check_if_dir === 'DIR')
+                                {
+                                    path = '~/' + command_suffix;
+                                }
+                                else
+                                {
+                                    path = cur_dir();
+                                    throw new Error('Not a directory.');
+                                }
+                            }
+                            catch(err)
+                            {
+                                if (path != '~')
+                                {
+                                    path = '~/' + path
+                                }
+
+                                $('.content').append('<p>' + command_prefix + ': ' + command_suffix + ': No such file or directory.');
+                            }
+                        }
+                    }
+                }
+                else if (command_prefix === valid_cmds[3]) // cat
+                {
+                    if (command[2])
+                    {
+                        $('.content').append('<p>"'+ command_prefix + '" only takes one argument.');
+                    }
+                    else
+                    {
+                        if (command_suffix == undefined || command_suffix === '')
+                        {
+                            $('.content').append('<p>no file input');
+                        }
+                        else
+                        {
+                            path = cur_dir();
+                            let available_txts = [];
+        
+                            for (let key in file_tree[path])
+                            {
+                                const val = file_tree[path][key];
+                                if (val.slice(-4) === '.txt')
+                                {
+                                    available_txts.push(val);
+                                }                            
+                            }
+                            
+                            if (available_txts.includes(command_suffix))
+                            {
+                                const file = command_suffix.replace(/\./g, '_')
+                                $('.content').append('<pre>' + eval(file));
+                            }
+                            else
+                            {
+                                $('.content').append('<p>' + command_prefix + ': ' + command_suffix + ': No such file.');
+                            }
+        
+                            if (path != '~')
+                            {
+                                path = '~/' + path;
+                            }
+                        }
+                    }
                 }
                 else if (command_prefix === valid_cmds[4]) // help
                 {
-                    $('.content').append('<pre>' + help_txt);
+                    if (command_suffix)
+                    {
+                        $('.content').append('<p>"'+ command_prefix + '" does not take any arguments.');
+                    }
+                    else
+                    {
+                        $('.content').append('<pre>' + help_txt);
+                    }
                 }
             }
             else
