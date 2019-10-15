@@ -177,10 +177,20 @@ $(document).ready( function()
                         {
                             try
                             {
-                                check_if_dir = file_tree[path][command_suffix]
+                                let new_command_suffix;
+                                if (command_suffix.slice(-1) === '/')
+                                {
+                                    new_command_suffix = command_suffix.slice(0, -1);
+                                }
+                                else
+                                {
+                                    new_command_suffix = command_suffix;
+                                }
+
+                                check_if_dir = file_tree[path][new_command_suffix]
                                 if (check_if_dir === 'DIR')
                                 {
-                                    path = '~/' + command_suffix;
+                                    path = '~/' + new_command_suffix;
                                 }
                                 else
                                 {
@@ -195,7 +205,7 @@ $(document).ready( function()
                                     path = '~/' + path
                                 }
 
-                                $('.content').append('<p>' + command_prefix + ': ' + command_suffix + ': No such file or directory.');
+                                $('.content').append('<p>' + command_prefix + ': ' + new_command_suffix + ': No such file or directory.');
                             }
                         }
                     }
