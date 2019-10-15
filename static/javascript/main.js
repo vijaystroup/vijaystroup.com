@@ -35,7 +35,7 @@ $(document).ready( function()
     let input = document.getElementById('command-line');
     input.addEventListener('keypress', command_line_event);
 
-    document.addEventListener('mouseup', function()
+    document.addEventListener('mouseup', () =>
     {
         /**
         This function is used for copying highlighted text and for focusing
@@ -51,6 +51,25 @@ $(document).ready( function()
         document.execCommand('copy');
         $(last_cmd_line).focus();
     }, true);
+
+    document.onkeydown = (key) =>
+    {
+         /**
+        This function is for recalling previous commands like on a real terminal emulator.
+
+        */
+
+        if (key.keyCode == 38)
+        {
+            let last_cmd = document.querySelectorAll("#command-line");
+            const last_input = document.querySelectorAll("#command-line:last-child")[0];
+            
+
+            last_cmd = last_cmd[last_cmd.length - 2].value;
+            $(last_input).val(last_cmd);
+
+        }
+    };
 
     function cur_dir()
     {
@@ -175,9 +194,9 @@ $(document).ready( function()
                         }
                         else
                         {
+                            let new_command_suffix;
                             try
                             {
-                                let new_command_suffix;
                                 if (command_suffix.slice(-1) === '/')
                                 {
                                     new_command_suffix = command_suffix.slice(0, -1);
