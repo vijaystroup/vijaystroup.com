@@ -12,7 +12,7 @@ Programming Languages:
 Programming Tools:
 - Various 'cloud' servers (e.g. Digital Ocean, Vultur, private servers).
 - Git (including many web-based git control system)
-- Linux command line
+- Unix command line
 - Visual Studio Code
 
 My projects can be found in the <span style="color:#3ec92e;">/projects</span> or on <a href="https://github.com/VijayStroup" target="_blank"><span style="color:#00A2FF;">GitHub</span></a>.

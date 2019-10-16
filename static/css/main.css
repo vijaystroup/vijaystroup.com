@@ -63,3 +63,43 @@ hr
     display: inline-flex;
     padding-right: 4%;
 }
+
+/* mobile */
+@media screen and (max-width: 1024px)
+{
+    body
+    {
+        font-size: 50%;
+    }
+
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="time"],
+    input[type="url"],
+    input[type="week"],
+    select:focus,
+    input:focus,
+    textarea
+    {
+        font-size: 16px;
+    }
+
+    #path
+    {
+        font-size: 14px;
+    }
+
+    .ls-out
+    {
+        font-size: 16px;
+    }
+}

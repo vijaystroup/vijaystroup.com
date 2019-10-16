@@ -258,7 +258,7 @@ $(document).ready( function()
                             if (available_txts.includes(command_suffix))
                             {
                                 const file = command_suffix.replace(/\./g, '_')
-                                $('.content').append('<pre>' + eval(file));
+                                $('.content').append('<pre class="pre-out">' + eval(file));
                             }
                             else
                             {
@@ -280,7 +280,7 @@ $(document).ready( function()
                     }
                     else
                     {
-                        $('.content').append('<pre>' + help_txt);
+                        $('.content').append('<pre class="pre-out">' + help_txt);
                     }
                 }
             }
