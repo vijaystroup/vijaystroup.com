@@ -2,7 +2,7 @@
 
 from json import loads
 
-# run this with multiprocessing or threading
+
 def read_txt(filename):
     with open(filename, 'r') as f:
         return f.read()
