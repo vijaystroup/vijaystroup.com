@@ -13,6 +13,7 @@ Language(s) & Unique Features
 
 - Modern password storing (e.g. hashing and encryption).
 - Windows installer for Offline Pass - <span style="font-weight:900;">Python</span> is not required.
+- UI built with Tkinter.
 
 Links
 -----

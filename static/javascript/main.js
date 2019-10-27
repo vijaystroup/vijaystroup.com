@@ -5,10 +5,12 @@ $(document).ready( function()
     const isIE = /*@cc_on!@*/false || !!document.documentMode;
     if (isIE)
     {
+        $(".content").empty();
         const warning_node = document.createElement('h1');
         warning_node.setAttribute('id', 'ie-warning');
         document.body.appendChild(warning_node);
         warning_node.innerText = 'THIS WEBSITE DOES NOT SUPPORT INTERNET EXPLORER.\nPLEASE SWITCH TO ANOTHER BROWSER.';
+        return;
     }
 
     // global constants
@@ -35,7 +37,7 @@ $(document).ready( function()
     let input = document.getElementById('command-line');
     input.addEventListener('keypress', command_line_event);
 
-    document.addEventListener('mouseup', () =>
+    document.addEventListener('mouseup', function ()
     {
         /**
         This function is used for copying highlighted text and for focusing
@@ -52,7 +54,7 @@ $(document).ready( function()
         $(last_cmd_line).focus();
     }, true);
 
-    document.onkeydown = (key) =>
+    document.onkeydown = function (key)
     {
          /**
         This function is for recalling previous commands like on a real terminal emulator.
