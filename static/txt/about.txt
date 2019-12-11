@@ -2,6 +2,8 @@ Hi, I'm Vijay, and I am currently studying physics and computer science.
 I love programming in variety of topics, however tying code to physics/data is my favorite.
 As of 10/10/2019, I have ~1.5 years of programming experience.
 
+Click <a href="https://vijaystroup.com/resume.pdf" target="_blank"><span style="font-weight:900;color:red;">HERE</span></a> to view my Resume.
+
 Programming Languages:
 - C
 - CSS
@@ -10,7 +12,7 @@ Programming Languages:
 - <span style="font-weight:900;">Python</span>
 
 Programming Tools:
-- Various 'cloud' servers (e.g. AWS, Digital Ocean, Vultur, private servers).
+- Various 'cloud' servers (e.g. Digital Ocean, Vultur, OVH, private servers).
 - Git (including many web-based git control system)
 - Unix command line
 - Visual Studio Code
