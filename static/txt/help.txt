@@ -8,7 +8,7 @@ __      __ _  _                  _____  _
            |__/         |___/                                  |_|    
 
 Hi! My name is Vijay Stroup and I'm a student studying physics and computer science.
-I love programming and science!
+I love programming and science! My resume may be found <a href="https://www.vijaystroup.com/static/resume.pdf" target="_blank"><span style="font-weight:900;color:red;">HERE</span></a>
 
 To navigate around my website, the available commands are:
         - help              : show help.

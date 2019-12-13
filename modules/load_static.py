@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
 from json import loads
-from os import getcwd
+from os import getcwd, path
 
-BASE_DIR = getcwd() + '/static/'
+#BASE_DIR = path.dirname(getcwd()) + 'static/'
+BASE_DIR = '/var/www/vijay/static/'
 
 
 def read_txt(filename):
