@@ -2,7 +2,7 @@ Hi, I'm Vijay, and I am currently studying physics and computer science.
 I love programming in variety of topics, however tying code to physics/data is my favorite.
 As of 10/10/2019, I have ~1.5 years of programming experience.
 
-Click <a href="https://www.vijaystroup.com/static/resume.pdf" target="_blank"><span style="font-weight:900;color:red;">HERE</span></a> to view my Resume.
+Click <a href="https://www.vijaystroup.com/static/resume.pdf" target="_blank"><span style="font-weight:900;color:#00A2FF;">Here</span></a> to view my Resume.
 
 Programming Languages:
 - C
