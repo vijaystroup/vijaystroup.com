@@ -2,40 +2,28 @@ import React from 'react';
 
 const Projects = () => {
   return (
-    <div style={projectContainer}>
+    <div className="sectionContainer">
       <div className="container">
-        <h1 id="projects" style={section_title} className="has-text-centered">Projects</h1>
+        <h1 id="projects" className="sectionTitle">Projects</h1>
 
-        <div class="columns">
-          <div class="column">
-            First column
+        <div className="columns is-centered">
+          <div className="column" onClick={console.log('hehe')}>
+            <img className="projImg" src="/static/imgs/cupid.png" />
           </div>
-          <div class="column">
-            Second column
+          <div className="column">
+            <img className="projImg" src="/static/imgs/offline_pass.png" />
+          </div>
+          <div className="column">
+            <img className="projImg" src="/static/imgs/personal_website.png" />
+          </div>
+          <div className="column">
+            <img className="projImg" src="/static/imgs/disney_data_science.png" />
           </div>
         </div> {/* end row 1 */}
-        <div class="columns">
-          <div class="column">
-            First column
-          </div>
-          <div class="column">
-            Second column
-          </div>
-        </div> {/* end row 2 */}
+        <h1 id="moreToCome" className="has-text-centered">More to come :)</h1>
       </div>
     </div>
   )
-}
-
-const projectContainer = {
-  backgroundColor: "#2F2F2F"
-}
-
-const section_title = {
-  fontSize: '30px',
-  fontFamily: 'FredokaOne',
-  paddingTop: '5%',
-  paddingBottom: '3%'
 }
 
 export default Projects;

@@ -15,7 +15,7 @@ To navigate around my website, the available commands are:
         - clear             : clear the screen.
         - ls                : list files in current directory.
         - cd [..][dir_name] : change directories.
-        - cat [file_name]   : read contents of file.
+        - cat [file_name]    : read contents of file.
         - exit              : exit the terminal.
 
 Color Legend:
