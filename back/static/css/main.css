@@ -7,6 +7,7 @@
     background: black;
     color: white;
     padding: none;
+    font-size: initial;
 }
 
 a
@@ -44,6 +45,7 @@ hr
     border: none;
     outline: none;
     caret-color: red;
+    font-size: 18px;
 }
 
 #path
@@ -67,9 +69,9 @@ hr
 /* mobile */
 @media screen and (max-width: 1024px)
 {
-    body
+    *
     {
-        font-size: 50%;
+        font-size: x-small;
     }
 
     input[type="color"],
@@ -90,7 +92,7 @@ hr
     input:focus,
     textarea
     {
-        font-size: 25px;
+        font-size: 18px;
     }
 
     #path

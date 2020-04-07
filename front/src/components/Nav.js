@@ -4,9 +4,12 @@ const HamNav = () => {
   return (
     <aside class="menu">
       <ul class="menu-list">
-        <li><a href="/cli">CLI</a></li>
-        <li><a href="/null">About</a></li>
-        <li><a href="/null">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="/cli"><i style={{ color: 'red' }} className="fas fa-terminal"></i></a>
+        </li>
       </ul>
     </aside>
   )
@@ -29,7 +32,8 @@ const Nav = () => {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="/">
-            <img src="https://bulma.io/images/bulma-logo.png" alt="logo" width="112" height="28" />
+            <img src="/static/imgs/bitmoji.png" alt="bitmoji" />
+            <p style={navbar_logo}>Vijay Stroup</p>
           </a>
 
           <a role="button" className={hamClass.join(' ')}  aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={toggleBurger}>
@@ -40,12 +44,13 @@ const Nav = () => {
         </div>
 
         <div id="navbarBasicExample" className="navbar-menu">
-          <div className="navbar-start">
-            <a className="navbar-item" href="/cli">CLI</a>
+          <div style={navbar_start} className="navbar-start">
+            <a className="navbar-item" href="#about">About</a>
+            <a className="navbar-item" href="#projects">Projects</a>
+            <a className="navbar-item" href="#contact">Contact</a>
           </div>
           <div className="navbar-end">
-            <a className="navbar-item" href="/null">About</a>
-            <a className="navbar-item" href="/null">Projects</a>
+            <a className="navbar-item" href="/cli"><i style={{ color: 'red' }} className="fas fa-terminal"></i></a>
           </div>
         </div>
       </nav>
@@ -53,6 +58,22 @@ const Nav = () => {
       { hamClass[hamClass.length - 1] === "is-active" ? <HamNav /> : null }
     </div>
   )
+}
+
+const navbar_start = {
+  flexGrow: 1,
+  justifyContent: 'center'
+}
+
+const navbar_logo = {
+  fontFamily: 'FredokaOne',
+  fontSize: '20px',
+  paddingLeft: '5px',
+  color: 'black'
+}
+
+const iconStyle = {
+  color: 'red'
 }
 
 export default Nav;
