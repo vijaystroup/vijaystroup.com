@@ -29,27 +29,25 @@ const Nav = () => {
 
   return (
     <div>
-      <nav className="navbar" role="navigation" aria-label="main navigation">
+      <nav style={navStyle} className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="/">
             <img src="/static/imgs/bitmoji.png" alt="bitmoji" />
             <p style={navbar_logo}>Vijay Stroup</p>
           </a>
 
-          <a role="button" className={hamClass.join(' ')}  aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={toggleBurger}>
+          <a role="button" className={hamClass.join(' ')}  aria-label="menu" aria-expanded="false" data-target="nav" onClick={toggleBurger}>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
 
-        <div id="navbarBasicExample" className="navbar-menu">
-          <div style={navbar_start} className="navbar-start">
+        <div id="nav" className="navbar-menu">
+          <div className="navbar-end">
             <a className="navbar-item" href="#about">About</a>
             <a className="navbar-item" href="#projects">Projects</a>
             <a className="navbar-item" href="#contact">Contact</a>
-          </div>
-          <div className="navbar-end">
             <a className="navbar-item" href="/cli"><i style={{ color: 'red' }} className="fas fa-terminal"></i></a>
           </div>
         </div>
@@ -60,11 +58,6 @@ const Nav = () => {
   )
 }
 
-const navbar_start = {
-  flexGrow: 1,
-  justifyContent: 'center'
-}
-
 const navbar_logo = {
   fontFamily: 'FredokaOne',
   fontSize: '20px',
@@ -72,8 +65,8 @@ const navbar_logo = {
   color: 'black'
 }
 
-const iconStyle = {
-  color: 'red'
+const navStyle = {
+  boxShadow: '0 2px 5px 0 rgba(0,0,0,0.02), 0 2px 10px 0 rgba(0,0,0,0.05)'
 }
 
 export default Nav;

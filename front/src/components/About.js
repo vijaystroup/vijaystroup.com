@@ -8,9 +8,9 @@ const About = () => {
 
         <div className="columns">
           <div style={aboutText} className="column">
-            <h1>Hi, I'm Vijay, and I am currently studying physics and computer science.</h1>
+            <h1>Hi, I'm Vijay, and I am currently studying physics and computer science at The University of Central Florida.</h1>
             <h3>
-              I love programming in variety of topics, however tying code to physics/data is my favorite.
+              I love programming in variety of topics, however creating applications is my favorite.
               <br />As of April 2020, I have ~2.0 years of programming experience.
             </h3>
             <br />
@@ -60,9 +60,7 @@ const aboutText = {
 }
 
 const aboutContainer = {
-  backgroundColor: 'grey',
-  backgroundImage: 'linear-gradient(black, #313131)',
-  Color: 'white'
+  backgroundColor: '#f2f4fb'
 }
 
 export default About;

@@ -15,7 +15,7 @@ $(document).ready( function()
 
     // global constants
     const getip_url = 'https://ipapi.co/json/';
-    const valid_cmds = ['clear', 'ls', 'cd', 'cat', 'help'];
+    const valid_cmds = ['clear', 'ls', 'cd', 'cat', 'help', 'exit'];
 
     $.get(getip_url, function (data)
         {
@@ -284,6 +284,11 @@ $(document).ready( function()
                     {
                         $('.content').append('<pre class="pre-out">' + help_txt);
                     }
+                }
+                else if (command_prefix === valid_cmds[5]) // exit
+                {
+                    window.location.replace("https://www.vijaystroup.com");
+                    // window.location.replace("http://localhost:5000");
                 }
             }
             else

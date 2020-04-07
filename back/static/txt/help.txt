@@ -7,7 +7,7 @@ __      __ _  _                  _____  _
             _/ |         __/ |                                 | |    
            |__/         |___/                                  |_|    
 
-Hi! My name is Vijay Stroup and I'm a student studying physics and computer science.
+Hi! My name is Vijay Stroup and I'm a student studying physics and computer science at The University of Central Florida.
 I love programming and science! My resume may be found <a href="https://www.vijaystroup.com/static/resume.pdf" target="_blank"><span style="font-weight:900;color:#00A2FF;">Here</span></a>
 
 To navigate around my website, the available commands are:
@@ -16,6 +16,7 @@ To navigate around my website, the available commands are:
         - ls                : list files in current directory.
         - cd [..][dir_name] : change directories.
         - cat [file_name]   : read contents of file.
+        - exit              : exit the terminal.
 
 Color Legend:
         - <span style="color:#3ec92e;">Green</span> : directories
