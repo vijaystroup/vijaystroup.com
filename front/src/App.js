@@ -5,9 +5,11 @@ import Landing from './components/Landing'
 import About from './components/About'
 import Projects from './components/Projects'
 
+import ProjectContextProvider from './contexts/ProjectContext'
+
 import 'bulma/css/bulma.css'
 import '@fortawesome/fontawesome-free/js/all.js'
-import './App.css';
+import './App.css'
 
 function App() {
   return (
@@ -15,9 +17,11 @@ function App() {
       <Nav />
       <Landing />
       <About />
-      <Projects />
+      <ProjectContextProvider>
+        <Projects />
+      </ProjectContextProvider>
     </div>
   )
 }
 
-export default App;
+export default App
