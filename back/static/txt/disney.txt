@@ -1,0 +1,21 @@
+DISNEY
+======
+
+Overview
+--------
+This project was my introduction to data science. In this project, I did many different
+plots and reports with data such as Disney's movie's revenue, and Disney Parks' ride waiting
+time. In the end, I made algorithm which asks for a users input, and will return the best
+route they should take through a Disney Park to minimize line waiting time. 
+
+Language(s) & Unique Features
+-----------------------------
+- Python
+
+- Many charts and plots showing the data visually.
+- Reports based on the data.
+- Algorithm to find the best route at a certain Disney Park to minimize line waiting time.
+
+Links
+-----
+- <a href="https://github.com/VijayStroup/Disney-Visualization" target="_blank"><span style="color:#00A2FF;">GitHub</span></a>

@@ -9,7 +9,7 @@ to try to gain the most experience on their server for bragging rights.
 
 Language(s) & Unique Features
 -----------------------------
-- Python, MySQL
+- Python, SQL
 
 - Player expirence unique to server.
 - Auto-updating leaderboard with PIL Python library.

@@ -10,6 +10,7 @@ Programming Languages:
 - HTML
 - Javascript
 - <span style="font-weight:900;">Python</span>
+- SQL
 
 Programming Tools:
 - Various 'cloud' servers (e.g. Digital Ocean, Vultur, OVH, private servers).

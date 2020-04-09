@@ -10,11 +10,12 @@ best solution I thought of for my website was a design that simulated a terminal
 
 Language(s) & Unique Features
 -----------------------------
-- Python, JavaScript, HTML, CSS, JSON
+- Python, JavaScript(Vanilla, NodeJS, ReactJS), HTML, CSS, JSON
 
-- Flask for handling web configuration.
-- Python and javascript interaction.
+- Flask for handling backend web configuration.
+- Python and javascript(vanilla) interaction for cli.
 - Simulated terminal emulator.
+- Python Flask serving ReactJS for frontend.
 
 Links
 -----

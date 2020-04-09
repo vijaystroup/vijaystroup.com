@@ -21,6 +21,7 @@ def cli():
         cupid_text=load_static.cupid_text,
         offlinepass_text=load_static.offlinepass_text,
         vijaystroupCOM_text=load_static.vijaystroupCOM_text,
+        disney_text=load_static.disney_text,
         file_tree=load_static.file_tree
     )
 

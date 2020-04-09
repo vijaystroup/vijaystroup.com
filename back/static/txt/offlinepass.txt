@@ -9,7 +9,7 @@ is either hashed or encrypted (no plain text anywhere).
 
 Language(s) & Unique Features
 -----------------------------
-- Python, SQLite
+- Python, SQL
 
 - Modern password storing (e.g. hashing and encryption).
 - Windows installer for Offline Pass - <span style="font-weight:900;">Python</span> is not required.

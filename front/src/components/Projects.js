@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import Project from './Project'
+import { Cupid, OfflinePass, PersonalWebsite, DisneyDataScience } from './Project'
 import { ProjectContext } from '../contexts/ProjectContext'
 
 const Projects = () => {
-  const { projects, toggleTab } = useContext(ProjectContext);
+  const { projects, toggleTab, activated } = useContext(ProjectContext);
 
   return (
     <div className="sectionContainer">
@@ -19,6 +19,7 @@ const Projects = () => {
             )
           })}
         </div>
+        <h1 id="moreToCome" className="has-text-centered">More to come :)</h1>
 
         <div style={{ paddingTop: '2%' }} class="tabs is-centered">
           <ul>
@@ -35,12 +36,23 @@ const Projects = () => {
           </ul>
         </div>
 
-        <Project />
-
-        <h1 id="moreToCome" className="has-text-centered">More to come :)</h1>
+        {(() => {
+          switch (activated) {
+            case 0:
+              return <Cupid />
+            case 1:
+              return <OfflinePass />
+            case 2:
+              return <PersonalWebsite />
+            case 3:
+              return <DisneyDataScience />
+            default:
+              return <Cupid />
+          }
+        })()}
       </div>
     </div>
   )
 }
 
-export default Projects;
+export default Projects

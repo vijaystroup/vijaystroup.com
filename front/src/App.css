@@ -54,12 +54,23 @@ html {
   cursor: pointer;
 }
 #moreToCome {
-  padding-top: 10%;
-  font-size: 30px;
+  font-size: 15px;
   font-family: FredokaOne;
   color: #2E71D8;
 }
 /* END PROJECTS COMP */
+
+/* PROJECT COMP */
+.projTitle {
+  font-size: 30px;
+}
+.projSubtitle {
+  font-size: 18px;
+  text-decoration: underline;
+  color: #2E71D8;
+  padding-bottom: 1vh;
+}
+/* END PROJECT COMP */
 
 /* Scrollbar */
 ::-webkit-scrollbar {

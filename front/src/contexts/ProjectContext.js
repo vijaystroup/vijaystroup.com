@@ -3,6 +3,7 @@ import React, { createContext, useState } from 'react'
 export const ProjectContext = createContext()
 
 const ProjectContextProvider = (props) => {
+  const [activated, setActivated] = useState(0)
   const [projects, setProjects] = useState([
     {
       id: 0,
@@ -36,7 +37,7 @@ const ProjectContextProvider = (props) => {
 
   const toggleTab = (id) => {
     let updatedState = []
-
+    
     projects.map((project) => {
       if(id === project.id) {
         updatedState.push({
@@ -57,11 +58,13 @@ const ProjectContextProvider = (props) => {
       }
     })    
 
+    setActivated(id)
     setProjects(updatedState)
   }
 
+
   return (
-    <ProjectContext.Provider value={{ projects, toggleTab }}>
+    <ProjectContext.Provider value={{ projects, toggleTab, activated }}>
       {props.children}
     </ProjectContext.Provider>
   )

@@ -1,29 +1,121 @@
-import React, { useContext } from 'react'
-import { ProjectContext } from '../contexts/ProjectContext'
-import path from 'path'
+// Things to do ->
+// * load in text files from static/txt
+// * map through different projects as to not repeat code and change text
 
-const Project = () => {
-  const { projects } = useContext(ProjectContext);
-  console.log(path.resolve(__filename))
+import React from 'react'
 
-  const file = new XMLHttpRequest()
-  file.open('GET', '', true)
-  console.log(file.responseText)
-  file.onreadystatechange = () => {
-    console.log('state change')
-  }
-
+export const Cupid = () => {
   return (
     <div>
-      {/* project Cupid */}
-
-      {/* project Offline-Pass */}
-
-      {/* project Personal Website */}
-
-      {/* project Disney Data Science */}
+      <h1 style={{ color: '#BD302A' }} className="has-text-centered projTitle">Cupid</h1>
+      <br />
+      <h2 className="projSubtitle">Overview</h2>
+      <p>
+        Cupid is a discord bot that creates a marriage system where players in your server
+        can marry eachother and gain experience points together. The point is for couples
+        to try to gain the most experience on their server for bragging rights.
+      </p>
+      <br />
+      <h2 className="projSubtitle">Language(s) & Unique Features</h2>
+      <ul>
+        <li>- Python, SQL</li>
+        <li>- Player expirence unique to server.</li>
+        <li>- Auto-updating leaderboard with PIL Python library.</li>
+      </ul>
+      <br />
+      <h2 className="projSubtitle">Links</h2>
+      <ul>
+        <li><a href="https://github.com/VijayStroup/Cupid-Bot" target="_blank">- GitHub</a></li>
+        <li><a href="https://top.gg/bot/613044146952732682" target="_blank">- Top.gg</a></li>
+      </ul>
     </div>
   )
 }
 
-export default Project
+export const OfflinePass = () => {
+  return (
+    <div>
+      <h1 style={{ color: '#F69D2B' }} className="has-text-centered projTitle">Offline-Pass</h1>
+      <br />
+      <h2 className="projSubtitle">Overview</h2>
+      <p>
+        Offline Pass is an offline password manager. This means none of your information is
+        stored in the 'cloud'. Even with your information being stored locally, all data
+        is either hashed or encrypted (no plain text anywhere).
+      </p>
+      <br />
+      <h2 className="projSubtitle">Language(s) & Unique Features</h2>
+      <ul>
+        <li>- Python, SQL</li>
+        <li>- Modern password storing (e.g. hashing and encryption).</li>
+        <li>- Windows installer for Offline Pass - Python is not required.</li>
+        <li>- UI built with Tkinter.</li>
+      </ul>
+      <br />
+      <h2 className="projSubtitle">Links</h2>
+      <ul>
+        <li><a href="https://github.com/VijayStroup/Offline-Pass" target="_blank">- GitHub</a></li>
+      </ul>
+    </div>
+  )
+}
+
+export const PersonalWebsite = () => {
+  return (
+    <div>
+      <h1 style={{ color: '#001C2C' }} className="has-text-centered projTitle">Personal Website</h1>
+      <br />
+      <h2 className="projSubtitle">Overview</h2>
+      <p>
+        vijaystroup.com is my personal website. This is a central hub where all my projects are located
+        and ways in which to get in contact with me.
+        With the combination of not being a good graphic designer and having a technical background, the
+        best solution I thought of for my website was a design that simulated a terminal emulator.
+      </p>
+      <br />
+      <h2 className="projSubtitle">Language(s) & Unique Features</h2>
+      <ul>
+        <li>- Python, JavaScript(Vanilla, NodeJS, ReactJS), HTML, CSS, JSON</li>
+        <li>- Flask for handling backend web configuration.</li>
+        <li>- Python and javascript(vanilla) interaction for cli.</li>
+        <li>- Simulated terminal emulator.</li>
+        <li>- Python Flask serving ReactJS for frontend.</li>
+      </ul>
+      <br />
+      <h2 className="projSubtitle">Links</h2>
+      <ul>
+        <li><a href="https://github.com/VijayStroup/vijaystroupCOM" target="_blank">- GitHub</a></li>
+        <li><a href="/">- vijaystroup.com</a></li>
+      </ul>
+    </div>
+  )
+}
+
+export const DisneyDataScience = () => {
+  return (
+    <div>
+      <h1 style={{ color: '#ED9FC3' }} className="has-text-centered projTitle">Disney Data Science</h1>
+      <br />
+      <h2 className="projSubtitle">Overview</h2>
+      <p>
+        This project was my introduction to data science. In this project, I did many different
+        plots and reports with data such as Disney's movie's revenue, and Disney Parks' ride waiting
+        time. In the end, I made algorithm which asks for a users input, and will return the best
+        route they should take through a Disney Park to minimize line waiting time.
+      </p>
+      <br />
+      <h2 className="projSubtitle">Language(s) & Unique Features</h2>
+      <ul>
+        <li>- Python</li>
+        <li>- Many charts and plots showing the data visually.</li>
+        <li>- Reports based on the data.</li>
+        <li>- Algorithm to find the best route at a certain Disney Park to minimize line waiting time.</li>
+      </ul>
+      <br />
+      <h2 className="projSubtitle">Links</h2>
+      <ul>
+        <li><a href="https://github.com/VijayStroup/Disney-Visualization" target="_blank">- GitHub</a></li>
+      </ul>
+    </div>
+  )
+}
