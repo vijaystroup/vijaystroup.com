@@ -30,7 +30,7 @@ const Nav = () => {
 
   return (
     <div>
-      <nav className="navbar nav" role="navigation" aria-label="main navigation">
+      <nav className="navbar is-fixed-top nav" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="/">
             <img src="/static/imgs/bitmoji.png" alt="bitmoji" />

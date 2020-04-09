@@ -1,9 +1,58 @@
-import React from 'react'
+// Things to do ->
+// * use one object in useState and update only that property of the object onChange
+
+import React, { useState } from 'react'
 
 const Contact = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [sent, setSent] = useState(false)
+
+  const formSubmit = (e) => {
+    e.preventDefault()
+    setSent(true)
+    console.log(name, email, message)
+  }
+
   return (
-    <div>
-      contact
+    <div className="sectionContainer container">
+    <h1 id="contact" className="sectionTitle">Contact</h1>
+
+    {!sent
+    ? (
+        <form onSubmit={formSubmit}>
+          <div className="field">
+            <label className="label">Name</label>
+            <div className="control has-icons-left">
+              <input className="input" type="text" placeholder="Vijay Stroup" required value={name} onChange={(e) => setName(e.target.value)} />
+              <span className="icon is-small is-left">
+                <i className="fas fa-signature"></i>
+              </span>
+            </div>
+          </div> {/* end name */}
+          <div className="field">
+            <label className="label">Email</label>
+            <div className="control has-icons-left">
+              <input className="input" type="text" placeholder="vijay@vijaystroup.com" required value={email} onChange={(e) => setEmail(e.target.value)} />
+              <span className="icon is-small is-left">
+                <i className="fas fa-at"></i>
+              </span>
+            </div>
+          </div> {/* end email */}
+          <div className="field">
+            <label className="label">Message</label>
+            <div className="control">
+              <textarea className="textarea" placeholder="Message" required value={message} onChange={(e) => setMessage(e.target.value)} />
+            </div>
+          </div> {/* end message */}
+          <div className="control has-text-centered contactBtnDiv">
+            <button id="contactBtn" className="button">Submit</button>
+          </div>
+        </form>
+      )
+    : <p id="sentThankYou" className="has-text-centered">Your message has been sent!<br />Thank you, {name}.</p>
+    }
     </div>
   )
 }

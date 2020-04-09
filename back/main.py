@@ -5,10 +5,8 @@ import modules.load_static as load_static
 
 app = Flask(__name__)
 
-# catch all for react index so we can use react router.
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
-def home(path):
+@app.route('/')
+def home():
     return render_template('react.html')
 
 @app.route('/cli')
