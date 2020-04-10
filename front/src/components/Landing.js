@@ -9,16 +9,16 @@ const Landing = () => {
           <h2 style={{ fontSize: '30px' }} class="subtitle">Student | Programmer | Futurepreneur</h2>
           <div className="columns is-centered">
             <div className="column is-narrow">
-            <a><i class="fab fa-github is-size-1"></i></a>
+            <a href="https://github.com/VijayStroup" target="_blank"><i class="fab fa-github is-size-1"></i></a>
             </div>
             <div className="column is-narrow">
-              <a><i class="fab fa-linkedin is-size-1"></i></a>
+              <a href="https://www.linkedin.com/in/vijay-stroup-40b54219a/" target="_blank"><i class="fab fa-linkedin is-size-1"></i></a>
             </div>
             <div className="column is-narrow">
-              <a><i class="fab fa-bitbucket is-size-1"></i></a>
+              <a href="https://bitbucket.org/vijaystroup/" target="_blank"><i class="fab fa-bitbucket is-size-1"></i></a>
             </div>
             <div className="column is-narrow">
-              <a><i class="fab fa-gitlab is-size-1"></i></a>
+              <a href="https://gitlab.com/VijayStroup" target="_blank"><i class="fab fa-gitlab is-size-1"></i></a>
             </div>
           </div>
         </div>
