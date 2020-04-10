@@ -18,7 +18,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="sectionContainer container">
+    <div className="container">
     <h1 id="contact" className="sectionTitle">Contact</h1>
 
     {!sent

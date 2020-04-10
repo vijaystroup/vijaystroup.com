@@ -1,15 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
-
 .App {
   background-color: #f2f4fb;
 }
-
-.sectionContainer {
-  height: 80vh;
-}
-
 .sectionTitle {
   font-size: 30px;
   font-family: FredokaOne;
@@ -28,7 +22,6 @@ html {
 .nav {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.02), 0 2px 10px 0 rgba(0,0,0,0.05);
 }
-/* END NAV COMP */
 
 /* ABOUT COMP */
 .programmingTitle {
@@ -41,7 +34,6 @@ html {
   font-size: 20px;
   font-weight: 800;
 }
-/* END ABOUT COMP */
 
 /* PROJECTS COMP */
 .projImg {
@@ -58,12 +50,8 @@ html {
   font-family: FredokaOne;
   color: #2E71D8;
 }
-/* END PROJECTS COMP */
 
 /* PROJECT COMP */
-#projContainer {
-  height: 100vh;
-}
 .projTitle {
   font-size: 30px;
 }
@@ -73,7 +61,6 @@ html {
   color: #2E71D8;
   padding-bottom: 1vh;
 }
-/* END PROJECT COMP */
 
 /* CONTACT COMP */
 ::placeholder {
@@ -81,6 +68,7 @@ html {
 }
 .contactBtnDiv {
   padding-top: 3%;
+  padding-bottom: 5%;
 }
 #contactBtn {
   width: 50%;
@@ -94,7 +82,6 @@ html {
 #sentThankYou {
   font-size: 50px;
 }
-/* END CONTACT COMP */
 
 /* FOOTER COMP */
 .footer {
@@ -117,4 +104,3 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
 }
-/* END Scrollbar */
