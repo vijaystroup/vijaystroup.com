@@ -6,7 +6,7 @@ const Projects = () => {
   const { projects, toggleTab, activated } = useContext(ProjectContext);
 
   return (
-    <div className="sectionContainer">
+    <div id="projContainer" className="sectionContainer">
       <div className="container">
         <h1 id="projects" className="sectionTitle">Projects</h1>
 

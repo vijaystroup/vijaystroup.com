@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
-from flask import Flask, render_template
+import json
+from flask import Flask, render_template, request
 import modules.load_static as load_static
+from modules.contact import send_mail
 
 app = Flask(__name__)
 
@@ -22,6 +24,13 @@ def cli():
         disney_text=load_static.disney_text,
         file_tree=load_static.file_tree
     )
+
+@app.route('/email', methods=['POST'])
+def email():
+    data = json.loads(request.data.decode('utf-8'))
+    sent = send_mail(data['name'], data['email'], data['message'])
+
+    return data
 
 
 if __name__ == '__main__':

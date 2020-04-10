@@ -11,8 +11,10 @@ const Contact = () => {
 
   const formSubmit = (e) => {
     e.preventDefault()
+
+    const body = JSON.stringify({ name, email, message })
+    fetch('http://localhost:5000/email', { method: 'post', body })
     setSent(true)
-    console.log(name, email, message)
   }
 
   return (
@@ -21,11 +23,12 @@ const Contact = () => {
 
     {!sent
     ? (
-        <form onSubmit={formSubmit}>
+        <form method="post" onSubmit={formSubmit}>
           <div className="field">
             <label className="label">Name</label>
             <div className="control has-icons-left">
-              <input className="input" type="text" placeholder="Vijay Stroup" required value={name} onChange={(e) => setName(e.target.value)} />
+              <input className="input" type="text" name="name" placeholder="Vijay Stroup" required 
+                value={name} onChange={(e) => setName(e.target.value)} />
               <span className="icon is-small is-left">
                 <i className="fas fa-signature"></i>
               </span>
@@ -34,7 +37,8 @@ const Contact = () => {
           <div className="field">
             <label className="label">Email</label>
             <div className="control has-icons-left">
-              <input className="input" type="text" placeholder="vijay@vijaystroup.com" required value={email} onChange={(e) => setEmail(e.target.value)} />
+              <input className="input" type="text" name="email" placeholder="vijay@vijaystroup.com" required 
+                value={email} onChange={(e) => setEmail(e.target.value)} />
               <span className="icon is-small is-left">
                 <i className="fas fa-at"></i>
               </span>
@@ -43,7 +47,8 @@ const Contact = () => {
           <div className="field">
             <label className="label">Message</label>
             <div className="control">
-              <textarea className="textarea" placeholder="Message" required value={message} onChange={(e) => setMessage(e.target.value)} />
+              <textarea className="textarea" name="message" placeholder="Message" 
+                required value={message} onChange={(e) => setMessage(e.target.value)} />
             </div>
           </div> {/* end message */}
           <div className="control has-text-centered contactBtnDiv">

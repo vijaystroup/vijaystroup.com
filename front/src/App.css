@@ -7,7 +7,7 @@ html {
 }
 
 .sectionContainer {
-  height: 100vh;
+  height: 80vh;
 }
 
 .sectionTitle {
@@ -61,6 +61,9 @@ html {
 /* END PROJECTS COMP */
 
 /* PROJECT COMP */
+#projContainer {
+  height: 100vh;
+}
 .projTitle {
   font-size: 30px;
 }
@@ -92,6 +95,12 @@ html {
   font-size: 50px;
 }
 /* END CONTACT COMP */
+
+/* FOOTER COMP */
+.footer {
+  padding: 0;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.15);
+}
 
 /* Scrollbar */
 ::-webkit-scrollbar {
