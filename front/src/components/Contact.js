@@ -13,7 +13,7 @@ const Contact = () => {
     e.preventDefault()
 
     const body = JSON.stringify({ name, email, message })
-    fetch('http://localhost:5000/email', { method: 'post', body })
+    fetch('https://www.vijaystroup.com/email', { method: 'post', body })
     setSent(true)
   }
 
@@ -27,7 +27,7 @@ const Contact = () => {
           <div className="field">
             <label className="label">Name</label>
             <div className="control has-icons-left">
-              <input className="input" type="text" name="name" placeholder="Vijay Stroup" required 
+              <input className="input" type="text" name="name" placeholder="John Doe" required 
                 value={name} onChange={(e) => setName(e.target.value)} />
               <span className="icon is-small is-left">
                 <i className="fas fa-signature"></i>
@@ -37,7 +37,7 @@ const Contact = () => {
           <div className="field">
             <label className="label">Email</label>
             <div className="control has-icons-left">
-              <input className="input" type="text" name="email" placeholder="vijay@vijaystroup.com" required 
+              <input className="input" type="text" name="email" placeholder="j.doe@example.com" required 
                 value={email} onChange={(e) => setEmail(e.target.value)} />
               <span className="icon is-small is-left">
                 <i className="fas fa-at"></i>
@@ -47,7 +47,7 @@ const Contact = () => {
           <div className="field">
             <label className="label">Message</label>
             <div className="control">
-              <textarea className="textarea" name="message" placeholder="Message" 
+              <textarea style={{ resize: 'none' }} className="textarea" name="message" placeholder="Message" 
                 required value={message} onChange={(e) => setMessage(e.target.value)} />
             </div>
           </div> {/* end message */}

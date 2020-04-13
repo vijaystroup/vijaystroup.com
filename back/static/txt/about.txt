@@ -1,5 +1,5 @@
 Hi, I'm Vijay, and I am currently studying physics and computer science at The University of Central Florida.
-I love programming in variety of topics, however creating applications is my favorite.
+I love programming in variety of topics - creating applications is my favorite.
 As of April 2020, I have ~2.0 years of programming experience.
 
 Click <a href="https://www.vijaystroup.com/static/resume.pdf" target="_blank"><span style="font-weight:900;color:#00A2FF;">Here</span></a> to view my Resume.
