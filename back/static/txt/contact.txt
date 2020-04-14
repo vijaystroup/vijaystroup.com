@@ -4,3 +4,4 @@
 - Bitbucket : <a href="https://bitbucket.org/vijaystroup/" target="_blank"><span style="color:#00A2FF;">vijaystroup</span></a>
 - GitHub    : <a href="https://github.com/VijayStroup" target="_blank"><span style="color:#00A2FF;">VijayStroup</span></a>
 - GitLab    : <a href="https://gitlab.com/VijayStroup" target="_blank"><span style="color:#00A2FF;">VijayStroup</span></a>
+- LinkedIn  : <a href="https://www.linkedin.com/in/vijay-stroup-40b54219a/" target="_blank"><span style="color:#00A2FF;">LinkedIn</span></a>
