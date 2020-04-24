@@ -9,10 +9,10 @@ def send_mail(name, email, message):
             smtp.login(os.getenv('EMAIL_USER'), os.getenv('EMAIL_PASS'))
 
             msg = EmailMessage()
-            msg['Subject'] = f'vijaystroup.com | {name} - {email}'
+            msg['Subject'] = f'Contact Form from vijaystroup.com'
             msg['From'] = os.getenv('EMAIL_USER')
             msg['To'] = 'vijay@vijaystroup.com'
-            msg.set_content(message)
+            msg.set_content(f'Name: {name}\nEmail:{email}\n\n{message}')
 
             smtp.send_message(msg)
         return 0
