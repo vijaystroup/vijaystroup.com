@@ -13,8 +13,7 @@ const Contact = () => {
     e.preventDefault()
 
     const body = JSON.stringify({ name, email, message })
-    // fetch('https://www.vijaystroup.com/email', { method: 'post', body })
-    fetch('http://localhost/email', { method: 'post', body })
+    fetch('http://www.vijaystroup.com/email', { method: 'post', body })
     setSent(true)
   }
 
