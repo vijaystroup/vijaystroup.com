@@ -3,8 +3,9 @@
 from json import loads
 from os import getcwd, path
 
+BASE_DIR = '/var/www/vijay/back/static/'
 #BASE_DIR = path.dirname(getcwd()) + 'static/'
-BASE_DIR = '/home/vijay/code/python/vijaystroup.com/back/static/'
+#BASE_DIR = '/home/vijay/code/python/vijaystroup.com/back/static/'
 
 
 def read_txt(filename):

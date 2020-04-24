@@ -5,7 +5,7 @@ import logging
 import os
 
 logging.basicConfig(stream=sys.stderr)
-sys.path.insert(0,"/var/www/vijay")
+sys.path.insert(0,"/var/www/vijay/back")
 
 from main import app as application
 application.secret_key = os.getenv('VIJAY_WEBPASS')
