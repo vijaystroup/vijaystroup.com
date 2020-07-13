@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="content has-text-centered">
         <p>Created by <span style={{ color: '#FF010E' }}>Vijay Stroup</span></p>
-        <p>v2.0</p>
+        <p>v2.1</p>
       </div>
     </footer>
   )

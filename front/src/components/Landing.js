@@ -12,7 +12,7 @@ const Landing = () => {
             <a href="https://github.com/VijayStroup" target="_blank"><i class="fab fa-github is-size-1"></i></a>
             </div>
             <div className="column is-narrow">
-              <a href="https://www.linkedin.com/in/vijay-stroup-40b54219a/" target="_blank"><i class="fab fa-linkedin is-size-1"></i></a>
+              <a href="https://www.linkedin.com/in/vijaystroup/" target="_blank"><i class="fab fa-linkedin is-size-1"></i></a>
             </div>
             <div className="column is-narrow">
               <a href="https://bitbucket.org/vijaystroup/" target="_blank"><i class="fab fa-bitbucket is-size-1"></i></a>

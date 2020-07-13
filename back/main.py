@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import json
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 import modules.load_static as load_static
 from modules.contact import send_mail
 
@@ -30,7 +30,7 @@ def email():
     data = json.loads(request.data.decode('utf-8'))
     sent = send_mail(data['name'], data['email'], data['message'])
 
-    return data
+    return jsonify({'msg': 'success'})
 
 
 if __name__ == '__main__':
