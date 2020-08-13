@@ -6,6 +6,7 @@ Click <a href="https://www.vijaystroup.com/static/resume.pdf" target="_blank"><s
 
 Programming Languages:
 - C
+- C++
 - CSS
 - HTML
 - Javascript
@@ -13,7 +14,7 @@ Programming Languages:
 - SQL
 
 Programming Tools:
-- Various 'cloud' servers (e.g. Digital Ocean, Vultur, OVH, private servers).
+- Various 'cloud' servers (e.g. Digital Ocean, Vultr, OVH, private servers).
 - Git Version Control (including many web-based git control system such as GitHub)
 - Unix command line
 - Visual Studio Code

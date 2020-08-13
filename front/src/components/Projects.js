@@ -1,5 +1,12 @@
 import React, { useContext } from 'react'
-import { Cupid, OfflinePass, PersonalWebsite, DisneyDataScience } from './Project'
+import {
+  Cupid,
+  OfflinePass,
+  PersonalWebsite,
+  DisneyDataScience,
+  MarketWatch,
+  BlastOff
+} from './Project'
 import { ProjectContext } from '../contexts/ProjectContext'
 
 const Projects = () => {
@@ -8,17 +15,6 @@ const Projects = () => {
   return (
     <div className="container">
       <h1 id="projects" className="sectionTitle">Projects</h1>
-
-      <div className="columns is-centered">
-        {projects.map((project) => {
-          return (
-            <div className="column">
-              <img key={project.id} className="projImg" src={project.img} onClick={() => toggleTab(project.id)} />
-            </div>
-          )
-        })}
-      </div>
-      <h1 id="moreToCome" className="has-text-centered">More to come :)</h1>
 
       <div style={{ paddingTop: '2%' }} class="tabs is-centered">
         <ul>
@@ -45,10 +41,15 @@ const Projects = () => {
             return <PersonalWebsite />
           case 3:
             return <DisneyDataScience />
+          case 4:
+            return <MarketWatch />
+          case 5:
+            return <BlastOff />
           default:
             return <Cupid />
         }
       })()}
+    <h1 id="moreToCome" className="has-text-centered">More to come :)</h1>
     </div>
   )
 }

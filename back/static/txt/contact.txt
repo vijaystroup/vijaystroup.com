@@ -1,7 +1,5 @@
 - Email     : <a href="mailto:vijay@vijaystroup.com" target="_blank"><span style="color:#00A2FF;">vijay@vijaystroup.com</span></a>
 - Resume    : <a href="https://www.vijaystroup.com/static/resume.pdf" target="_blank"><span style="color:#00A2FF;">Resume</span></a>
 
-- Bitbucket : <a href="https://bitbucket.org/vijaystroup/" target="_blank"><span style="color:#00A2FF;">vijaystroup</span></a>
 - GitHub    : <a href="https://github.com/VijayStroup" target="_blank"><span style="color:#00A2FF;">VijayStroup</span></a>
-- GitLab    : <a href="https://gitlab.com/VijayStroup" target="_blank"><span style="color:#00A2FF;">VijayStroup</span></a>
 - LinkedIn  : <a href="https://www.linkedin.com/in/vijay-stroup/" target="_blank"><span style="color:#00A2FF;">LinkedIn</span></a>

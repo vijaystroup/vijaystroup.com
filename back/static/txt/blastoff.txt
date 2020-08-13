@@ -1,0 +1,21 @@
+BLASTOFF
+========
+
+Overview
+--------
+BlastOff is a graphical user interface for viewing rocket sensors during the
+launch phase of a rocket. The incoming data is just simulated without real sensors
+and the graphical user interface is representative of that data. The "fake" sensors
+record the data of the rocket's thrust, velocity, air pressure, altitude, and
+temperature.
+
+Language(s) & Unique Features
+-----------------------------
+- C++
+
+- GUI.
+- Fake sensor data calculations.
+
+Links
+-----
+- <a href="https://github.com/VijayStroup/BlastOff" target="_blank"><span style="color:#00A2FF;">GitHub</span></a>

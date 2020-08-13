@@ -8,30 +8,38 @@ const ProjectContextProvider = (props) => {
     {
       id: 0,
       name: 'Cupid',
-      img: '/static/imgs/cupid.png',
       active: 'is-active',
       icon: 'fas fa-heart'
     },
     {
       id: 1,
       name: 'Offline-Pass',
-      img: '/static/imgs/offline_pass.png',
       active: '',
       icon: 'fas fa-lock'
     },
     {
       id: 2,
       name: 'Personal Website',
-      img: '/static/imgs/personal_website.png',
       active: '',
       icon: 'fas fa-desktop'
     },
     {
       id: 3,
       name: 'Disney Data Science',
-      img: '/static/imgs/disney_data_science.png',
       active: '',
       icon: 'fas fa-magic'
+    },
+    {
+      id: 4,
+      name: 'MarketWatch',
+      active: '',
+      icon: 'fas fa-chart-line'
+    },
+    {
+      id: 5,
+      name: 'BlastOff',
+      active: '',
+      icon: 'fas fa-rocket'
     }
   ])
 
@@ -43,7 +51,6 @@ const ProjectContextProvider = (props) => {
         updatedState.push({
           id: project.id,
           name: project.name,
-          img: project.img,
           active: 'is-active',
           icon: project.icon
         })
@@ -51,7 +58,6 @@ const ProjectContextProvider = (props) => {
         updatedState.push({
           id: project.id,
           name: project.name,
-          img: project.img,
           active: '',
           icon: project.icon
         })

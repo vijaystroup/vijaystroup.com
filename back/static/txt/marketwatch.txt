@@ -1,0 +1,20 @@
+MARKETWATCH
+===========
+
+Overview
+--------
+This project came about with a problem I was having. I wanted to invest in the stock
+market when the S&P500 dropped - in the day - 2% or more. Instead of having to constantly
+check myself, I wrote a program that checks the current price of the day, and if it meets
+the 2% threshold, will send me a text message. I then set up a cronjob to run the script
+every hour, thus achieving complete autonomy.
+
+Language(s) & Unique Features
+-----------------------------
+- Python
+
+- Sending text messages with google's smtp server.
+
+Links
+-----
+- <a href="https://github.com/VijayStroup/MarketWatch" target="_blank"><span style="color:#00A2FF;">GitHub</span></a>

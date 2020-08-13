@@ -19,15 +19,16 @@ const About = () => {
           <h1 className="has-text-centered programmingTitle">Programming Languages</h1>
           <br />
           <p>Python</p><progress className="progress is-link" value="100" max="100">100%</progress>
-          <p>C</p><progress className="progress is-link" value="70" max="100">70%</progress>
+          <p>C</p><progress className="progress is-link" value="90" max="100">90%</progress>
+          <p>C++</p><progress className="progress is-link" value="80" max="100">80%</progress>
           <p>Javascript (Vanilla, NodeJS, ReactJS)</p><progress className="progress is-link" value="70" max="100">70%</progress>
-          <p>HTML & CSS</p> <progress className="progress is-link" value="80" max="100">80%</progress>
+          <p>HTML & CSS</p> <progress className="progress is-link" value="70" max="100">70%</progress>
           <p className="has-text-right">* Skill levels are relative to Python.</p>
           <br /><br /><br />
           <h1 className="has-text-centered programmingTitle">Programming Tools</h1>
           <br />
           <ul>
-            <li>- Various 'cloud' servers (e.g. Digital Ocean, Vultur, OVH, private servers)</li>
+            <li>- Various 'cloud' servers (e.g. Digital Ocean, Vultr, OVH, private servers)</li>
             <li>- Git Version Control (including many web-based git control system such as GitHub)</li>
             <li>- Unix command line</li>
             <li>- Visual Studio Code</li>

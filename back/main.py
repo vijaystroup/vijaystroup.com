@@ -1,9 +1,19 @@
 #!/usr/bin/env python3
 
+import logging
+import os
 import json
 from flask import Flask, render_template, request, jsonify
 import modules.load_static as load_static
 from modules.contact import send_mail
+
+PATH = os.path.dirname(os.path.abspath(__file__))
+logging.basicConfig(
+    filename=f'{PATH}/../error.log',
+    filemode='a', format='[%(asctime)s] %(message)s',
+    datefmt='%y-%m-%d %H:%M:%S',
+    level=40
+)
 
 app = Flask(__name__)
 
@@ -22,16 +32,21 @@ def cli():
         offlinepass_text=load_static.offlinepass_text,
         vijaystroupCOM_text=load_static.vijaystroupCOM_text,
         disney_text=load_static.disney_text,
+        marketwatch_text=load_static.marketwatch_text,
+        blastoff_text=load_static.blastoff_text,
         file_tree=load_static.file_tree
     )
 
 @app.route('/email', methods=['POST'])
 def email():
-    data = json.loads(request.data.decode('utf-8'))
-    sent = send_mail(data['name'], data['email'], data['message'])
+    try:
+        data = json.loads(request.data.decode('utf-8'))
+        send_mail(data['name'], data['email'], data['message'])
+    except Exception:
+        logging.exception('Exception thrown in /email route handler')
 
     return jsonify({'msg': 'success'})
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
