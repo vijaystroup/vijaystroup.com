@@ -15,23 +15,18 @@ logging.basicConfig(
 )
 
 
-def read_secret():
-    with open(os.path.join(str(Path.home), '.ssh/vijaystroup.com.json'), 'r') as f:
-        return loads(f.read())
-
-
 def send_mail(name, email, message):
     try:
-        secrets = read_secret()
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-            smtp.login(secrets['EMAIL_USER'], secrets['EMAIL_PASS'])
-
+            smtp.login(os.getenv('EMAIL_USER'), os.getenv('EMAIL_PASS'))
+            logging.error('logged in')
             msg = EmailMessage()
             msg['Subject'] = f'Contact Form from vijaystroup.com'
-            msg['From'] = secrets['EMAIL_USER']
+            msg['From'] = os.getenv('EMAIL_USER')
             msg['To'] = 'vijay@vijaystroup.com'
             msg.set_content(f'Name: {name}\nEmail: {email}\n\n{message}')
 
             smtp.send_message(msg)
     except:
         logging.exception('Exception thrown in sending email')
+        return -1

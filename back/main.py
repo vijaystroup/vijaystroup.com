@@ -39,14 +39,14 @@ def cli():
 
 @app.route('/email', methods=['POST'])
 def email():
-    try:
-        data = json.loads(request.data.decode('utf-8'))
-        send_mail(data['name'], data['email'], data['message'])
-    except Exception:
-        logging.exception('Exception thrown in /email route handler')
+    data = json.loads(request.data.decode('utf-8'))
+    logging.error('before send email')
+    if send_mail(data['name'], data['email'], data['message']) == -1:
+        logging.error('after send email')
+        return jsonify({'msg': 'error'})
 
     return jsonify({'msg': 'success'})
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, host='0.0.0.0')
