@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    image: docker.pkg.github.com/vijaystroup/vijaystroupcom/vijaystroup.com:latest
+    environment:
+      - EMAIL_USER=${EMAIL_USER?Variable not set}
+      - EMAIL_PASS=${EMAIL_PASS?Variable not set}
+    ports:
+      - "80:80"
+  ucf-fe:
+    image: docker.pkg.github.com/vijaystroup/ucf-fe/ucf-fe:latest
+    environment:
+      - MODULE_NAME=app
+    ports:
+      - "81:80"
+      
