@@ -40,9 +40,7 @@ def cli():
 @app.route('/email', methods=['POST'])
 def email():
     data = json.loads(request.data.decode('utf-8'))
-    logging.error('before send email')
     if send_mail(data['name'], data['email'], data['message']) == -1:
-        logging.error('after send email')
         return jsonify({'msg': 'error'})
 
     return jsonify({'msg': 'success'})
