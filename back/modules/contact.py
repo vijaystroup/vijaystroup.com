@@ -17,9 +17,8 @@ logging.basicConfig(
 
 def send_mail(name, email, message):
     try:
-        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+        with smtplib.SMTP_SSL('smtp.gmail.com', 465, timeout=3) as smtp:
             smtp.login(os.getenv('EMAIL_USER'), os.getenv('EMAIL_PASS'))
-            logging.error('logged in')
             msg = EmailMessage()
             msg['Subject'] = f'Contact Form from vijaystroup.com'
             msg['From'] = os.getenv('EMAIL_USER')
