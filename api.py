@@ -1,6 +1,7 @@
 from flask import jsonify
 from __init__ import app
 
+
 @app.route('/projects', methods=['GET'])
 def projects():
     projects = {
