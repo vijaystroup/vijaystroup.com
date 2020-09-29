@@ -1,0 +1,24 @@
+version: '3'
+services:
+  web:
+    image: docker.pkg.github.com/vijaystroup/vijaystroupcom/vijaystroup.com:latest
+    networks:
+      - traefik-public
+    deploy:
+      mode: replicated
+      replicas: 2
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=traefik-public
+        - traefik.constraint-label=traefik-public
+        - traefik.http.routers.web-http.rule=Host(`example.com`)
+        - traefik.http.routers.web-http.entrypoints=http
+        - traefik.http.routers.web-http.middlewares=https-redirect
+        - traefik.http.routers.web-https.rule=Host(`example.com`)
+        - traefik.http.routers.web-https.entrypoints=https
+        - traefik.http.routers.web-https.tls=true
+        - traefik.http.routers.web-https.tls.certresolver=le
+        - traefik.http.services.web.loadbalancer.server.port=80
+networks:
+  traefik-public:
+    external: true
