@@ -1,5 +1,9 @@
 {% extends "layout.html" %}
 
+  {% block css %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+  {% endblock css %}
+
   {% block main %}
   <section class="headline">
     <h1 id="headline-title">Student, <span id="programmer">Programmer</span>, and Futurepreneur.</h2>
@@ -14,9 +18,7 @@
         <li>Application</li>
       </ul>
     </div>
-    <div>
-      <!-- tiles -->
-    </div>
+    {% block tiles %}{% endblock %}
     </section>
     <section>
       <div>
