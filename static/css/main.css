@@ -12,6 +12,8 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: var(--text-primary);
 }
 
 body {
@@ -74,7 +76,7 @@ main {
 /* large screen */
 @media only screen and (min-width: 600px) {
   body {
-      background-color: red;
+      background-color: var(--bg-primary);
   }
 
   header {

@@ -1,44 +1,13 @@
 <div class="tiles">
-  <div class="tile">
-    <div class="content">
-      <img src="{{ url_for('static', filename='images/coding.svg') }}" alt="one">
-      <p>I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.</p>
+  {% for key, val in projects.items() %}
+    <div class="tile {{ val.type }}">
+      <a href="" target="_blank">
+        <div class="content">
+          <h2>{{ key }}</h2>
+          <img src="{{ url_for('static', filename='images/'+val.image) }}" alt="project-img">
+          <p>{{ val.description }}</p>
+        </div>
+      </a>
     </div>
-  </div>
-  <div class="tile">
-    <div class="content">
-      <img src="#" alt="two">
-      <p>I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.</p>
-    </div>
-  </div>
-  <div class="tile">
-    <div class="content">
-      <img src="#" alt="three">
-      <p>I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.</p>
-    </div>
-  </div>
-  <div class="tile">
-    <div class="content">
-      <img src="#" alt="four">
-      <p>I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.</p>
-    </div>
-  </div>
-  <div class="tile">
-    <div class="content">
-      <img src="#" alt="five">
-      <p>I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.</p>
-    </div>
-  </div>
-  <div class="tile">
-    <div class="content">
-      <img src="#" alt="six">
-      <p>I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.</p>
-    </div>
-  </div>
-  <div class="tile">
-    <div class="content">
-      <img src="#" alt="seven">
-      <p>I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.</p>
-    </div>
-  </div>
+  {% endfor %}
 </div>
