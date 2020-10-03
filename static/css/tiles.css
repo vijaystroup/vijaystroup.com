@@ -44,7 +44,7 @@
 @media (max-width: 991px) {
     .tiles {
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-        /* grid-template-rows: minmax(auto, auto); */
+        grid-template-rows: minmax(auto, auto);
     }
 
     .tile {

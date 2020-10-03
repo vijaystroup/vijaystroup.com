@@ -9,42 +9,50 @@ def home():
         'Cupid': {
             'image': 'cupid.svg',
             'description': 'I\'m baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.',
-            'type': 'application'
+            'type': 'application',
+            'link': 'https://github.com/VijayStroup/Cupid-Bot'
         },
         'Offline Pass': {
             'image': 'lock.svg',
             'description': 'I\'m baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.',
-            'type': 'application'
+            'type': 'application',
+            'link': 'https://github.com/VijayStroup/Offline-Pass'
         },
         'Personal Website': {
             'image': 'internet.svg',
             'description': 'I\'m baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.',
-            'type': 'web'
+            'type': 'web',
+            'link': 'https://github.com/VijayStroup/vijaystroupCOM'
         },
         'Disney Data Science': {
             'image': 'magic-wand.svg',
             'description': 'I\'m baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.',
-            'type': 'data-science'
+            'type': 'data-science',
+            'link': 'https://github.com/VijayStroup/Disney-Visualization'
         },
         'Market Watch': {
             'image': 'stock.svg',
             'description': 'I\'m baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.',
-            'type': 'application data-science'
+            'type': 'application data-science',
+            'link': 'https://github.com/VijayStroup/MarketWatch'
         },
         'BlastOff': {
             'image': 'rocket.svg',
             'description': 'I\'m baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.',
-            'type': 'application'
+            'type': 'application',
+            'link': 'https://github.com/VijayStroup/BlastOff'
         },
         'WhichWhale': {
             'image': 'whale.svg',
             'description': 'I\'m baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.',
-            'type': 'web application'
+            'type': 'web application',
+            'link': 'https://github.com/VijayStroup/whichwhale'
         },
         'UCF FE Practice': {
             'image': 'coding.svg',
             'description': 'I\'m baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.',
-            'type': 'web application'
+            'type': 'web application',
+            'link': 'https://github.com/VijayStroup/ucf-fe'
         }
     }
 
