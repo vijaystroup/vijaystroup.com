@@ -29,7 +29,7 @@ def home():
         'Market Watch': {
             'image': 'stock.svg',
             'description': 'I\'m baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.',
-            'type': 'application'
+            'type': 'application data-science'
         },
         'BlastOff': {
             'image': 'rocket.svg',
