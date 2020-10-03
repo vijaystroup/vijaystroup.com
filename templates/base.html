@@ -7,13 +7,12 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/tiles.css') }}">
 
-        <script src="https://unpkg.com/colcade@0/colcade.js" defer></script>
         <script type="text/javascript" src="{{ url_for('static', filename='js/tiles.js') }}" defer></script>
     </head>
 
     <body>
         <main>
-        {% block main %}{% endblock %}
+            {% block main %}{% endblock %}
         </main>
     </body>
 </html>

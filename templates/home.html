@@ -1,36 +1,36 @@
-{% extends "layout.html" %}
+{% extends "base.html" %}
 
 {% block main %}
-<section class="headline">
-<h1 id="headline-title">Student, <span id="programmer">Programmer</span>, and Futurepreneur.</h2>
-<h2 id="headline-subtitle">Vijay Stroup</h1>
-</section>
-<section>
-<div>
-  <ul class="project-types">
-    <li id='all' style="color: #2E71D8;">All</li>
-    <li id='data-science'>Data Science</li>
-    <li id='web'>Web</li>
-    <li id='application'>Application</li>
-  </ul>
-</div>
-{% include "tiles.html" %}
-</section>
-<section>
+  <section class="headline">
+  <h1 id="headline-title">Student, <span id="programmer">Programmer</span>, and Futurepreneur.</h2>
+  <h2 id="headline-subtitle">Vijay Stroup</h1>
+  </section>
+  <section>
   <div>
-    <h1>About me</h1>
-    <h2>Student @ The University of Central Florida</h2>
-    <button>Resume</button>
+    <ul class="project-types">
+      <li id='all' style="color: #2E71D8;">All</li>
+      <li id='data-science'>Data Science</li>
+      <li id='web'>Web</li>
+      <li id='application'>Application</li>
+    </ul>
   </div>
-  <div>
-    <p>I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas. Whatever trust fund snackwave, chillwave chia vape migas</p>
-    <p>Humblebrag hot chicken try-hard celiac lo-fi. Succulents readymade air plant skateboard, bicycle rights coloring book meditation tumblr kitsch cred cloud bread brooklyn fanny pack put a bird on it</p>
-  </div>
-</section>
-<section>
-  <h1>Timeline</h1>
-  <div>
-    <!-- timeline -->
-  </div>
-</section>  
+  {% include "tiles.html" %}
+  </section>
+  <section>
+    <div>
+      <h1>About me</h1>
+      <h2>Student @ The University of Central Florida</h2>
+      <button>Resume</button>
+    </div>
+    <div>
+      <p>I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas. Whatever trust fund snackwave, chillwave chia vape migas</p>
+      <p>Humblebrag hot chicken try-hard celiac lo-fi. Succulents readymade air plant skateboard, bicycle rights coloring book meditation tumblr kitsch cred cloud bread brooklyn fanny pack put a bird on it</p>
+    </div>
+  </section>
+  <section>
+    <h1>Timeline</h1>
+    <div>
+      <!-- timeline -->
+    </div>
+  </section>  
 {% endblock main %}

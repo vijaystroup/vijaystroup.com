@@ -1,5 +1,6 @@
 # import logging
 import os
+import json
 from flask import Flask
 
 PATH = os.path.dirname(os.path.abspath(__file__))
@@ -9,5 +10,7 @@ PATH = os.path.dirname(os.path.abspath(__file__))
 #     datefmt='%y-%m-%d %H:%M:%S',
 #     level=logging.INFO
 # )
+with open(f'{PATH}/static/projects.json') as f:
+    projects = json.loads(f.read())
 
 app = Flask(__name__)

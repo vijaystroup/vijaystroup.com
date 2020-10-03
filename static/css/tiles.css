@@ -18,7 +18,6 @@
     text-align: center;
     color: #fff;
     transition: 300ms;
-    animation: fade-in 1s;
 }
 
 .tile:hover {
@@ -27,8 +26,12 @@
 
 .content > img {
     position: relative;
-    max-width: 8rem;
+    max-width: 7rem;
     margin: 2rem 0;
+}
+
+.content > h2 {
+    font-size: 2rem;
 }
 
 .tile:nth-child(n) {
