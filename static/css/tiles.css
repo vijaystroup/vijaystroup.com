@@ -21,16 +21,16 @@
 }
 
 .tile:hover {
-    background: cornflowerblue;
+    background: rgb(100, 149, 237);
 }
 
-.content > img {
+.tile > a > .content > img {
     position: relative;
     max-width: 7rem;
     margin: 2rem 0;
 }
 
-.content > h2 {
+.tile > a > .content > h2 {
     font-size: 2rem;
 }
 

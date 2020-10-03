@@ -2,19 +2,19 @@
 
 {% block main %}
   <section class="headline">
-  <h1 id="headline-title">Student, <span id="programmer">Programmer</span>, and Futurepreneur.</h2>
-  <h2 id="headline-subtitle">Vijay Stroup</h1>
+    <h1 id="headline-title">Student, <span id="programmer">Programmer</span>, and Futurepreneur.</h2>
+    <h2 id="headline-subtitle">Vijay Stroup</h1>
   </section>
   <section>
-  <div>
-    <ul class="project-types">
-      <li id='all' style="color: #2E71D8;">All</li>
-      <li id='data-science'>Data Science</li>
-      <li id='web'>Web</li>
-      <li id='application'>Application</li>
-    </ul>
-  </div>
-  {% include "tiles.html" %}
+    <div>
+      <ul class="project-types">
+        <li id='all' style="color: #2E71D8;">All</li>
+        <li id='data-science'>Data Science</li>
+        <li id='web'>Web</li>
+        <li id='application'>Application</li>
+      </ul>
+    </div>
+    {% include "tiles.html" %}
   </section>
   <section>
     <div>
@@ -28,9 +28,7 @@
     </div>
   </section>
   <section>
-    <h1>Timeline</h1>
-    <div>
-      <!-- timeline -->
-    </div>
-  </section>  
+    <h1 class="timeline-title">Timeline</h1>
+    {% include "timeline.html" %}
+  </section>
 {% endblock main %}

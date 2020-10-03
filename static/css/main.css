@@ -20,6 +20,10 @@ body {
   background-color: var(--gradient-color);
 }
 
+section {
+  margin: 5rem 0;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
