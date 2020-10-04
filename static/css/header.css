@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.nav > ul {
+    display: flex;
+}
+
+.nav > ul > li {
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+.nav > ul > li > a {
+    transition: var(--transition-speed-fast);
+}
+
+.nav > ul > li > a:hover {
+    color: #FF494B;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    .nav {
+        display: none;
+    }
+}

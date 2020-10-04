@@ -17,7 +17,7 @@
     place-items: center;
     text-align: center;
     color: #fff;
-    transition: 300ms;
+    transition: var(--transition-speed-medium);
 }
 
 .tile:hover {
