@@ -10,7 +10,7 @@
     margin: .5rem;
     background-color: var(--bg-secondary);
     text-align: center;
-    width: 32%;
+    min-height: 25rem;
     transition: var(--transition-speed-slow);
 }
 
@@ -44,8 +44,14 @@
     font-size: 1.8rem;
 }
 
-@media (max-width: 864px) {
+@media only screen and (max-width: 1264px) {
     .tile {
-        width: 100%;
+        width: 35rem;
+    }
+}
+
+@media only screen and (min-width: 1264px) {
+    .tile {
+        width: 32%;
     }
 }
