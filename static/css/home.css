@@ -30,7 +30,32 @@ section {
 
 .headline {
   text-align: center;
-  margin: 10rem 0;
+  margin: 10rem 3rem;
+}
+
+.socials {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  writing-mode: vertical-lr;
+  margin-top: 6rem;
+}
+
+.socials > ul {
+  display: flex;
+}
+
+.socials > ul > li {
+  margin-top: 1rem;
+}
+
+.socials > ul > li > a {
+  opacity: .7;
+  transition: var(--transition-speed-fast);
+}
+
+.socials > ul > li > a:hover {
+  opacity: 1;
 }
 
 .project-types {
