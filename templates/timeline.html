@@ -1,31 +1,16 @@
 <div class="timeline">
   <ul>
-    <li>
-      <div class="entry">
-        <h2>Cupid</h2>
-        <p>I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.</p>
-      </div>
-      <div class="time">
-        <p>April 2020</p>
-      </div>
-    </li>
-    <li>
-      <div class="entry">
-        <h2>Cupid</h2>
-        <p>I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.</p>
-      </div>
-      <div class="time">
-        <p>April 2020</p>
-      </div>
-    </li>
-    <li>
-      <div class="entry">
-        <h2>Cupid</h2>
-        <p>I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.</p>
-      </div>
-      <div class="time">
-        <p>April 2020</p>
-      </div>
-    </li>
+    {% for key, val in projects.items()|reverse %}
+      <li>
+        <div class="entry">
+          <h2>{{ key }}</h2>
+          <p>{{ val.description }}</p>
+        </div>
+        <div class="time">
+          <p>{{ val.time }}</p>
+        </div>
+      </li>
+    {% endfor %}
   </ul>
+  <div style="clear:both;"></div>
 </div>
