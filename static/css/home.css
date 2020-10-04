@@ -36,6 +36,14 @@ section {
   margin: 10rem 3rem;
 }
 
+.headline-background {
+  position: absolute;
+}
+
+.headline-background > i {
+  font-size: 2rem;
+}
+
 .socials {
   position: absolute;
   top: 0;
