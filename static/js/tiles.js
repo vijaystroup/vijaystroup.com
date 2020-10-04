@@ -11,7 +11,7 @@ const appSelector = document.getElementById('application')
 allSelector.addEventListener('click', () => {
   for (ele of allCollection) ele.style.display = 'grid'
 
-  allSelector.style.color = '#2E71D8'
+  allSelector.style.color = '#FF494B'
   dataSciSelector.style.color = 'white'
   webSelector.style.color = 'white'
   appSelector.style.color = 'white'
@@ -22,7 +22,7 @@ dataSciSelector.addEventListener('click', () => {
   for (ele of dataSciCollection) ele.style.display = 'grid'
 
   allSelector.style.color = 'white'
-  dataSciSelector.style.color = '#2E71D8'
+  dataSciSelector.style.color = '#FF494B'
   webSelector.style.color = 'white'
   appSelector.style.color = 'white'
 })
@@ -33,7 +33,7 @@ webSelector.addEventListener('click', () => {
 
   allSelector.style.color = 'white'
   dataSciSelector.style.color = 'white'
-  webSelector.style.color = '#2E71D8'
+  webSelector.style.color = '#FF494B'
   appSelector.style.color = 'white'
 })
 
@@ -44,5 +44,5 @@ appSelector.addEventListener('click', () => {
   allSelector.style.color = 'white'
   dataSciSelector.style.color = 'white'
   webSelector.style.color = 'white'
-  appSelector.style.color = '#2E71D8'
+  appSelector.style.color = '#FF494B'
 })
