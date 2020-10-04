@@ -1,3 +1,8 @@
+#timeline > h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
 .timeline {
   position: relative;
   margin: 0 auto;
@@ -24,6 +29,10 @@
 
 /* small screens */
 @media only screen and (max-width: 991px) {
+  #timeline > h1 {
+    font-size: 2rem;
+  }
+
   .timeline > ul > li {
     text-align: right;
     width: 55%;
