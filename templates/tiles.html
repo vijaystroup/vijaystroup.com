@@ -3,7 +3,11 @@
     <div class="tile {{ val.type }}">
       <a href="{{ val.link }}" target="_blank">
         <div class="content">
-          <h2>{{ key }}</h2>
+          <div class="content-title">
+            <div></div>
+            <div><h2>{{ key }}</h2></div>
+            <div><i class="fab fa-github"></i></div>
+          </div>
           <img src="{{ url_for('static', filename='images/'+val.image) }}" alt="project-img">
           <p>{{ val.description }}</p>
         </div>

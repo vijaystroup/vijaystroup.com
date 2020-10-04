@@ -1,16 +1,21 @@
 .tiles {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem 2rem;
+    margin: 2rem 2rem;
     align-items: center;
     justify-content: center;
 }
 
 .tile {
-    margin: .25rem;
+    margin: .5rem;
     background-color: var(--bg-secondary);
     text-align: center;
     width: 32%;
+    transition: var(--transition-speed-slow);
+}
+
+.tile:hover {
+    background-color: var(--blue);
 }
 
 .content {
@@ -22,10 +27,21 @@
     margin: 2rem 0;
 }
 
-@media (max-width: 991px) {
-    .tile {
-        width: 49%;
-    }
+.content-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-title > div {
+    width: 100%;
+}
+
+.content-title > div:nth-child(1), .content-title > div:nth-child(3) {
+    width: 3rem;
+}
+
+.content-title > div > i {
+    font-size: 1.8rem;
 }
 
 @media (max-width: 864px) {
