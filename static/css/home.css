@@ -6,6 +6,9 @@
   --transition-speed-slow: 600ms;
   --transition-speed-medium: 300ms;
   --transition-speed-fast: 200ms;
+
+  --red: #FF494B;
+  --blue: rgb(100, 149, 237);
 }
 
 * {
@@ -38,6 +41,53 @@ section {
 .project-types > li {
   margin: 0 1rem;
   cursor: pointer;
+}
+
+#about > h1 {
+  margin: 0 3rem;
+  margin-bottom: 2rem;
+}
+
+.about {
+  display: flex;
+  margin: 0 3rem;
+  justify-content: space-between;
+}
+
+.about-headline {
+  width: 30%;
+}
+
+.about-headline > button {
+  cursor: pointer;
+  margin-top: 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: .5rem 2rem;
+  border: solid 3px transparent;
+  background-image: none, linear-gradient(100deg, var(--red), orange);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px var(--bg-primary) inset;
+  transition: var(--transition-speed-fast);
+  outline: none;
+  color: var(--red);
+}
+
+.about-headline > button:hover {
+  box-shadow: none;
+  color: black;
+}
+
+.about-description {
+  display: flex;
+  width: 60%;
+  font-size: 14px;
+}
+
+.about-description > p {
+  margin: 0 1rem;
+  opacity: .7;
 }
 
 /* small screen */
