@@ -9,6 +9,5 @@ with open(f'{PATH}/static/projects.json') as f:
     projects = json.loads(f.read())
 
 tools = os.listdir(f'{PATH}/static/images/tools')
-random.shuffle(tools)
 
 app = Flask(__name__)
