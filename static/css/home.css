@@ -81,17 +81,17 @@ section {
 }
 
 #about {
+  display: flex;
+  flex-direction: column;
   margin: 0 10rem;
 }
 
 #about > h1 {
-  margin: 0 3rem;
   margin-bottom: 2rem;
 }
 
 .about {
   display: flex;
-  margin: 0 3rem;
   justify-content: space-between;
 }
 
@@ -123,16 +123,21 @@ section {
 .about-description {
   display: flex;
   width: 60%;
-  font-size: 14px;
 }
 
 .about-description > p {
   margin: 0 1rem;
   opacity: .7;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 /* small screen */
+@media only screen and (max-width: 1264px) {
+  #about {
+    margin: 0 5rem;
+  }
+}
+
 @media only screen and (max-width: 1032px) {
   #about {
     margin: 0 5rem;
