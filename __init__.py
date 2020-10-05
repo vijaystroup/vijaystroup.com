@@ -1,16 +1,14 @@
-# import logging
 import os
 import json
+import random
 from flask import Flask
 
 PATH = os.path.dirname(os.path.abspath(__file__))
-# logging.basicConfig(
-#     filename=f'{PATH}/../error.log',
-#     filemode='a', format='[%(asctime)s] %(message)s',
-#     datefmt='%y-%m-%d %H:%M:%S',
-#     level=logging.INFO
-# )
+
 with open(f'{PATH}/static/projects.json') as f:
     projects = json.loads(f.read())
+
+tools = os.listdir(f'{PATH}/static/images/tools')
+random.shuffle(tools)
 
 app = Flask(__name__)

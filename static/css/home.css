@@ -132,12 +132,6 @@ section {
   font-size: 1.1rem;
 }
 
-.tool {
-  position: absolute;
-  z-index: -1;
-  max-height: 2rem;
-}
-
 /* small screen */
 @media only screen and (max-width: 1032px) {
   #about {

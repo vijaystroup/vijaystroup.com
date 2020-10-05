@@ -1,0 +1,21 @@
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    margin-left: 1.5rem;
+    margin-top: 6rem;
+    width: 6rem;
+}
+
+.tool {
+  max-width: 2rem;
+  margin: .5rem;
+}
+
+/* small screen */
+@media only screen and (max-width: 1200px) {
+    .tools {
+        display: none;
+    }
+}
