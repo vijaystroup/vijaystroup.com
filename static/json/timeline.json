@@ -1,58 +1,54 @@
 {
-  "Cupid": {
-    "image": "cupid.svg",
-    "description": "I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.",
-    "type": "application",
-    "link": "https://github.com/VijayStroup/Cupid-Bot",
-    "time": "Dec 2020"
+  "Finished Cupid": {
+    "description": "Uploaded Cupid to GitHub. This project was started under no git control.",
+    "time": "Oct 2019"
   },
-  "Offline Pass": {
-      "image": "lock.svg",
-      "description": "I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.",
-      "type": "application",
-      "link": "https://github.com/VijayStroup/Offline-Pass",
-      "time": "Dec 2020"
+  "Finished Offline Pass": {
+    "description": "Uploaded Offline Pass to GitHub. This project was started under no git control.",
+    "time": "Oct 2019"
   },
-  "Personal Website": {
-      "image": "internet.svg",
-      "description": "I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.",
-      "type": "web",
-      "link": "https://github.com/VijayStroup/vijaystroupCOM",
-      "time": "Dec 2020"
+  "Started Disney Data Science": {
+      "description": "Started project to display data science skills to try to score an internship at Disney.",
+      "time": "Feb 2020"
   },
-  "Disney Data Science": {
-      "image": "magic-wand.svg",
-      "description": "I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.",
-      "type": "data-science",
-      "link": "https://github.com/VijayStroup/Disney-Visualization",
-      "time": "Dec 2020"
-  },
-  "Market Watch": {
-      "image": "stock.svg",
-      "description": "I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.",
-      "type": "application data-science",
-      "link": "https://github.com/VijayStroup/MarketWatch",
-      "time": "Dec 2020"
-  },
-  "BlastOff": {
-      "image": "rocket.svg",
-      "description": "I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.",
-      "type": "application",
-      "link": "https://github.com/VijayStroup/BlastOff",
-      "time": "Dec 2020"
-  },
-  "WhichWhale": {
-      "image": "whale.svg",
-      "description": "I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.",
-      "type": "web application",
-      "link": "https://github.com/VijayStroup/whichwhale",
-      "time": "Dec 2020"
-  },
-  "UCF FE Practice": {
-      "image": "coding.svg",
-      "description": "I'm baby squid lomo keytar fanny pack aesthetic messenger bag hammock bespoke hell of church-key artisan farm-to-table migas.",
-      "type": "web application",
-      "link": "https://github.com/VijayStroup/ucf-fe",
-      "time": "Dec 2020"
-  }
+  "Finished Disney Data Science": {
+        "description": "Determined what movies make Disney the most money and created a module to reduce waiting time for rides.",
+        "time": "Mar 2020"
+    },
+    "Created Market Watch": {
+        "description": "My financial advisor wanted me to keep tabs on the S&P500, so why not let a computer do it for me?",
+        "time": "Jul 2020"
+    },
+    "Created BlastOff": {
+        "description": "First c++ project.",
+        "time": "Aug 2020"
+    },
+    "Created WhichWhale": {
+        "description": "I started getting into Docker and wanted to test out my swarm to make sure it was working properly.",
+        "time": "Sep 2020"
+    },
+    "Created UCF FE Practice": {
+        "description": "I made this application for myself and other cs students at UCF to help prepare for the entrance exam.",
+        "time": "Sep 2020"
+    },
+    "Started Tinder ML": {
+        "description": "As my first real project in machine learning, I wanted to see if I could get the computer to determine if a particular girl was attractive or not.",
+        "time": "Jan 2020"
+    },
+    "Stopped Tinder ML": {
+        "description": "After doing all the automation and getting 10,000 pictures, I was unable to implement learning and was getting 50/50 guesses on each girl.",
+        "time": "Jul 2020"
+    },
+    "Started Personal Website": {
+        "description": "Needed a portfolio website, and wanted to make a theme I saw where the website was a terminal emulator.",
+        "time": "Oct 2019"
+    },
+    "Personal Website v2": {
+        "description": "Updated my personal website to have a normal gui with the cli still being an option in another route.",
+        "time": "Apr 2020"
+    },
+    "Updated Personal Website v3": {
+        "description": "Updated gui part of website and automated getting my resume from google. Also the cli is no longer implemented :/.",
+        "time": "Oct 2020"
+    }
 }
