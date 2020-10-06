@@ -1,9 +1,9 @@
 {
-  "Finished Cupid": {
+  "Uploaded Cupid": {
     "description": "Uploaded Cupid to GitHub. This project was started under no git control.",
     "time": "Oct 2019"
   },
-  "Finished Offline Pass": {
+  "Uploaded Offline Pass": {
     "description": "Uploaded Offline Pass to GitHub. This project was started under no git control.",
     "time": "Oct 2019"
   },
@@ -48,7 +48,7 @@
     "time": "Sep 2020"
   },
   "Updated Personal Website v3": {
-    "description": "Updated gui part of website and automated getting my resume from google. Also the cli is no longer implemented :/.",
+    "description": "Updated gui part of website and automated getting my resume from google. Also, the cli is no longer implemented :/.",
     "time": "Oct 2020"
   }
 }
