@@ -42,6 +42,10 @@
   margin: 2rem 0;
 }
 
+.content > p {
+  font-size: 1.2rem;
+}
+
 .content-title {
   display: flex;
   justify-content: space-between;

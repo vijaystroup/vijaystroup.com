@@ -1,8 +1,6 @@
 import os
 import json
-import random
 from flask import Flask
-from modules import get_resume
 
 PATH = os.path.dirname(os.path.abspath(__file__))
 
