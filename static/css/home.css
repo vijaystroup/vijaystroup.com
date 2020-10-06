@@ -126,7 +126,7 @@ section {
   font-size: 1.7rem;
 }
 
-/* small screen */
+
 @media only screen and (max-width: 1264px) {
   #about {
     margin: 0 5rem;
@@ -176,7 +176,6 @@ section {
   }
 }
 
-/* large screen */
 @media only screen and (min-width: 600px) {
   #headline-title {
     font-size: 2.5rem;

@@ -31,7 +31,7 @@
   padding: 30px;
 }
 
-/* small screens */
+
 @media only screen and (max-width: 991px) {
   #timeline > h1 {
     font-size: 2rem;
@@ -72,7 +72,6 @@
   }
 }
 
-/* large screens */
 @media only screen and (min-width: 991px) {
   .timeline > ul > li:nth-child(odd) {
     float: left;

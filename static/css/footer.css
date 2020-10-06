@@ -34,7 +34,8 @@ footer > div > ul > li > a:hover{
   color: var(--blue);
 }
 
-@media (max-width: 790px) {
+
+@media only screen and (max-width: 790px) {
   .footer-headline {
     display: none;
   }
