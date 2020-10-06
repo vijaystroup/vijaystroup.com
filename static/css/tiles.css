@@ -1,3 +1,19 @@
+.project-types {
+    display: flex;
+    justify-content: center;
+}
+
+.project-types > li {
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: var(--transition-speed-fast);
+}
+
+.project-types > li:hover {
+    opacity: .5;
+    color: var(--red);
+}
+
 .tiles {
     display: flex;
     flex-wrap: wrap;

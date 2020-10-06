@@ -5,6 +5,14 @@ header {
     margin: 1rem 5rem;
 }
 
+header > h1 > a{
+    transition: var(--transition-speed-fast);
+}
+
+header > h1 > a:hover {
+    color: var(--red)
+}
+
 .nav > ul {
     display: flex;
 }

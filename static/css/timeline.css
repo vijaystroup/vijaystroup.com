@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.entry > p {
+  opacity: .7;
+}
+
 .timeline {
   position: relative;
   margin: 0 auto;

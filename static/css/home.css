@@ -37,6 +37,10 @@ section {
   margin: 0 3rem;
 }
 
+#headline-subtitle {
+  opacity: .7;
+}
+
 .headline-background {
   position: absolute;
 }
@@ -68,16 +72,6 @@ section {
 
 .socials > ul > li > a:hover {
   opacity: 1;
-}
-
-.project-types {
-  display: flex;
-  justify-content: center;
-}
-
-.project-types > li {
-  margin: 0 1rem;
-  cursor: pointer;
 }
 
 #about {
@@ -179,7 +173,6 @@ section {
   #headline-subtitle {
     font-size: 1rem;
     margin-top: 1rem;
-    opacity: .8;
   }
 }
 
@@ -192,6 +185,5 @@ section {
   #headline-subtitle {
     margin-top: 1rem;
     font-size: 1.3rem;
-    opacity: .8;
   }
 }

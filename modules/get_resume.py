@@ -3,7 +3,7 @@ import io
 from googleapiclient.http import MediaIoBaseDownload
 from googleapiclient.discovery import build
 import pickle
-from Google import Create_Service
+from modules.Google import Create_Service
 
 GPATH = os.path.dirname(os.path.abspath(__file__))
 
@@ -17,7 +17,7 @@ downloader = MediaIoBaseDownload(fh, request)
 done = False
 while done is False:
     status, done = downloader.next_chunk()
-    print(f'{status.progress() * 100}')
+    print(f'Progress: {status.progress() * 100}')
 
 fh.seek(0)
 with open(f'{GPATH}/../static/resume.pdf', 'wb') as f:
