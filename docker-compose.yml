@@ -1,6 +1,6 @@
 version: '3'
 services:
   web:
-    image: docker.pkg.github.com/vijaystroup/vijaystroupcom/vijaystroup.com:latest
+    image: web
     ports:
       - "80:80"
