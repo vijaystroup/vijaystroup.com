@@ -1,0 +1,16 @@
+<div class="timeline">
+  <ul>
+    {% for key, val in timeline.items()|reverse %}
+      <li>
+        <div class="entry">
+          <h2>{{ key }}</h2>
+          <p>{{ val.description }}</p>
+        </div>
+        <div class="time">
+          <p>{{ val.time }}</p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+  <div style="clear:both;"></div>
+</div>

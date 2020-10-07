@@ -1,0 +1,83 @@
+.project-types {
+  display: flex;
+  justify-content: center;
+}
+
+.project-types > li {
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: var(--transition-speed-fast);
+}
+
+.project-types > li:hover {
+  opacity: .5;
+}
+
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile {
+  margin: .5rem;
+  background-color: var(--bg-secondary);
+  text-align: center;
+  min-height: 25rem;
+  transition: var(--transition-speed-slow);
+}
+
+.tile:hover {
+  background-color: var(--blue);
+}
+
+.content {
+  margin: 1rem;
+}
+
+.content > img {
+  max-height: 8rem;
+  margin: 2rem 0;
+}
+
+.content > p {
+  font-size: 1.2rem;
+}
+
+.content-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-title > div {
+  width: 100%;
+}
+
+.content-title > div:nth-child(1), .content-title > div:nth-child(3) {
+  width: 3rem;
+}
+
+.content-title > div > i {
+  font-size: 1.8rem;
+}
+
+
+@media only screen and (max-width: 1264px) {
+  .tile {
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1264px) {
+  .tile {
+    width: 32%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .tile {
+    width: 100%;
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "Cupid": {
+    "image": "cupid.svg",
+    "description": "A Discord Bot that serves a marraige system to help increase user engagement.",
+    "type": "application",
+    "link": "https://github.com/VijayStroup/Cupid-Bot"
+  },
+  "Offline Pass": {
+    "image": "lock.svg",
+    "description": "An offline password manager to help you remember complicated passwords without the risk of your passwords being in the cloud.",
+    "type": "application",
+    "link": "https://github.com/VijayStroup/Offline-Pass"
+  },
+  "Personal Website": {
+    "image": "internet.svg",
+    "description": "Started off as a fake terminal emulator and has grown to what you see now, serving as a central hub for Vijay Stroup.",
+    "type": "web",
+    "link": "https://github.com/VijayStroup/vijaystroupCOM"
+  },
+  "Disney Data Science": {
+    "image": "magic-wand.svg",
+    "description": "Determine what type of movies makes Disney the most money. Also provides a schedule of what rides to go on a particular day to reduce waiting times.",
+    "type": "data-science",
+    "link": "https://github.com/VijayStroup/Disney-Visualization"
+  },
+  "Market Watch": {
+    "image": "stock.svg",
+    "description": "Alert yourself via text message when the price of a stock falls below a certain threshold.",
+    "type": "application data-science",
+    "link": "https://github.com/VijayStroup/MarketWatch"
+  },
+  "BlastOff": {
+    "image": "rocket.svg",
+    "description": "A GUI that shows sensors of a rocket when simulated of it taking off.",
+    "type": "application",
+    "link": "https://github.com/VijayStroup/BlastOff"
+  },
+  "WhichWhale": {
+    "image": "whale.svg",
+    "description": "A simple web application to know (when using docker), which docker process the request is being served on.",
+    "type": "web application",
+    "link": "https://github.com/VijayStroup/whichwhale"
+  },
+  "UCF FE Practice": {
+    "image": "coding.svg",
+    "description": "A web application to help help UCF students study for the UCF Computer Science Entrance Exam, aka The Foundation Exam.",
+    "type": "web application",
+    "link": "https://github.com/VijayStroup/ucf-fe"
+  }
+}

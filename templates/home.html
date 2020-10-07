@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block main %}
+  <section class="headline" id="headline">
+    <h1 id="headline-title">Student, <span style="color: #FF494B;">Programmer</span>, and Futurepreneur</h1>
+    <h2 id="headline-subtitle">Student at The University of Central Florida</h2>
+    <div class="socials">
+      <ul>
+        <li style="color: blue;">&#9679<a href="https://github.com/VijayStroup" target="_blank"> GitHub</a></li>
+        <li style="color: var(--blue);">&#9679<a href="https://www.linkedin.com/in/vijaystroup/" target="_blank"> LinkedIn</a></li>
+        <li style="color: red;">&#9679<a href="https://www.youtube.com/channel/UCQn-qbKA0xBH5CJ-sqI8HnQ" target="_blank"> YouTube</a></li>
+      </ul>
+    </div>
+  </section>
+  <section id="projects">
+    <div>
+      <ul class="project-types">
+        <li id='all' style="color: #FF494B;">All</li>
+        <li id='data-science'>Data Science</li>
+        <li id='web'>Web</li>
+        <li id='application'>Application</li>
+      </ul>
+    </div>
+    {% include "tiles.html" %}
+  </section>
+  <section id="about">
+    <h1>About me</h1>
+    <div class="about">
+      <div class="about-headline">
+        <h2>Student @ UCF studying Physics & Computer Science</h2>
+        <button onclick="location.href='/static/resume.pdf'">Resume</button>
+      </div>
+      <div class="about-description">
+        <p>I love programming and learning a variety of topics. Web apps are my favorite out of the bunch. As of October 2020, I have ~2.5 years of development expirence.</p>
+        <p>One major thing I am working on now is a new startup that will serve many software products from a satire news website to a real estate management service and many more.</p>
+      </div>
+      {% include "tools.html" %}
+    </div>
+  </section>
+  <section id="timeline">
+    <h1>Timeline</h1>
+    {% include "timeline.html" %}
+  </section>
+{% endblock main %}

@@ -1,0 +1,10 @@
+credentials*
+token*
+.vscode
+__pycache__
+.DS_Store
+deploy.sh
+docker*
+modules
+requirements.txt
+venv
