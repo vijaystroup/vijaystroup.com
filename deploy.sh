@@ -4,7 +4,7 @@
 if [ ! -d "venv" ] 
 then
     printf "\n\nMaking Python venv\n==================\n"
-    python -m venv venv
+    python3 -m venv venv
     printf "\n\nInstalling requirements.txt\n===========================\n"
     source venv/bin/activate
     pip install -r requirements.txt
@@ -14,7 +14,7 @@ fi
 
 # get resume
 printf "\n\nDownloading resume\n==================\n" 
-python modules/get_resume.py
+python3 modules/get_resume.py
 
 # # build image
 printf "\n\nBuilding image\n==============\n"
@@ -23,4 +23,4 @@ docker build -t web .
 
 # deploy stack
 printf "\n\nDeploying stack\n===============\n"
-docker stack deploy -c docker-compose.traefik.yml
+docker stack deploy -c docker-compose.traefik.yml web
