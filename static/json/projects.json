@@ -43,7 +43,7 @@
   },
   "UCF FE Practice": {
     "image": "coding.svg",
-    "description": "A web application to help help UCF students study for the UCF Computer Science Entrance Exam, aka The Foundation Exam.",
+    "description": "A web application to help UCF students study for the UCF Computer Science Entrance Exam, aka The Foundation Exam.",
     "type": "web application",
     "link": "https://github.com/VijayStroup/ucf-fe"
   }
