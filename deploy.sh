@@ -3,23 +3,24 @@
 # make venv if not created
 if [ ! -d "venv" ] 
 then
-    echo "Making Python venv" 
+    printf "\n\nMaking Python venv\n==================\n"
     python -m venv venv
+    printf "\n\nInstalling requirements.txt\n===========================\n"
+    source venv/bin/activate
     pip install -r requirements.txt
+else
+    source venv/bin/activate
 fi
 
-# activate environment
-echo "Activating venv" 
-source venv/bin/activate
-
 # get resume
-echo "Downloading resume" 
+printf "\n\nDownloading resume\n==================\n" 
 python modules/get_resume.py
 
-# build image
-echo "Building image" 
+# # build image
+printf "\n\nBuilding image\n==============\n"
+docker image rm web
 docker build -t web .
 
 # deploy stack
-echo "Deploying stack" 
+printf "\n\nDeploying stack\n===============\n"
 docker stack deploy -c docker-compose.traefik.yml
