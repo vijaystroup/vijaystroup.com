@@ -25,6 +25,7 @@
 
 body {
   background-color: var(--bg-primary);
+  height: 100%;
 }
 
 section {
