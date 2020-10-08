@@ -6,10 +6,10 @@ then
     printf "\n\nMaking Python venv\n==================\n"
     python3 -m venv venv
     printf "\n\nInstalling requirements.txt\n===========================\n"
-    source venv/bin/activate
+    . venv/bin/activate
     pip install -r requirements.txt
 else
-    source venv/bin/activate
+    . venv/bin/activate
 fi
 
 # get resume
