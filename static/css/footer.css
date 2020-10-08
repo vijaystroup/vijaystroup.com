@@ -39,4 +39,8 @@ footer > div > ul > li > a:hover{
   .footer-headline {
     display: none;
   }
+
+  .footer-title {
+    text-align: center;
+  }
 }

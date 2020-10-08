@@ -2,8 +2,8 @@
   display: none;
   font-size: 3rem;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
   z-index: 99;
   color: white;
   cursor: pointer;
