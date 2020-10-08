@@ -27,14 +27,17 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/tiles.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/timeline.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/terms.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/back_to_top.css') }}">
 
     <script type="text/javascript" src="{{ url_for('static', filename='js/tiles.js') }}" defer></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/backToTop.js') }}" defer></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
 
   <body>
     <header>{% include "header.html" %}</header>
     <main>{% block main %}{% endblock %}</main>
+    <i id="back-to-top" class="fas fa-arrow-circle-up"></i>
     <footer>{% include "footer.html" %}</footer>
   </body>
 </html>
