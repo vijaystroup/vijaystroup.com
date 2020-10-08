@@ -1,7 +1,7 @@
 {
   "Cupid": {
     "image": "cupid.svg",
-    "description": "A Discord Bot that serves a marraige system to help increase user engagement.",
+    "description": "A Discord Bot that serves as marriage system to help increase user engagement.",
     "type": "application",
     "link": "https://github.com/VijayStroup/Cupid-Bot"
   },
@@ -31,7 +31,7 @@
   },
   "BlastOff": {
     "image": "rocket.svg",
-    "description": "A GUI that shows sensors of a rocket when simulated of it taking off.",
+    "description": "A GUI that shows sensors of a rocket when simulating the launch phase.",
     "type": "application",
     "link": "https://github.com/VijayStroup/BlastOff"
   },

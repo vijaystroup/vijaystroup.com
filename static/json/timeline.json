@@ -16,7 +16,7 @@
     "time": "Jan 2020"
   },
   "Started Disney Data Science": {
-    "description": "Started project to display data science skills to try to score an internship at Disney.",
+    "description": "Started this project to display data science skills to try to score an internship at Disney.",
     "time": "Feb 2020"
   },
   "Finished Disney Data Science": {
@@ -24,7 +24,7 @@
     "time": "Mar 2020"
   },
   "Personal Website v2": {
-    "description": "Updated my personal website to have a normal gui with the cli still being an option in another route.",
+    "description": "Updated my personal website to have a normal GUI with the CLI still being an option in another route.",
     "time": "Apr 2020"
   },
   "Stopped Tinder ML": {
@@ -44,11 +44,11 @@
     "time": "Sep 2020"
   },
   "Created UCF FE Practice": {
-    "description": "I made this application for myself and other cs students at UCF to help prepare for the entrance exam.",
+    "description": "I made this application for myself and other CS students at UCF to help prepare for the entrance exam.",
     "time": "Sep 2020"
   },
   "Updated Personal Website v3": {
-    "description": "Updated gui part of website and automated getting my resume from google. Also, the cli is no longer implemented :/.",
+    "description": "Updated GUI part of website and automated getting my resume from google. Also, the CLI is no longer implemented :/.",
     "time": "Oct 2020"
   }
 }
