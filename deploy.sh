@@ -14,13 +14,9 @@ else
     . venv/bin/activate
 fi
 
-# get latest updated resume
-printf "\n\nDownloading resume\n==================\n" 
-python3 modules/get_resume.py
-
 # build image
 printf "\n\nBuilding image\n==============\n"
-docker build -t website:latest .
+docker build -t website .
 sleep 3 # sleep for 3 seconds to make sure image is done completely
 
 # deploy stack
