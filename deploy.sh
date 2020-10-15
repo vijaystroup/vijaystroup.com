@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# this script is for pushing up new image to GitHub and then invoking the GitHub
+# action
+
 # make venv if not created
 if [ ! -d "venv" ] 
 then
@@ -12,14 +15,14 @@ else
     . venv/bin/activate
 fi
 
-# get resume
+# get latest updated resume
 printf "\n\nDownloading resume\n==================\n" 
 python3 modules/get_resume.py
 
-# # build image
+# build image
 printf "\n\nBuilding image\n==============\n"
-docker image rm web
-docker build -t web .
+docker build -t docker.pkg.github.com/vijaystroup/vijaystroupCOM/vijaystroup.com .
+docker push docker.pkg.github.com/vijaystroup/vijaystroupCOM/vijaystroup.com
 
 # deploy stack
 printf "\n\nDeploying stack\n===============\n"
