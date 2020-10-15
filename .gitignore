@@ -1,5 +1,5 @@
 token*
 credentials*
-resume.pdf
 .DS_Store
 venv
+*.pyc
