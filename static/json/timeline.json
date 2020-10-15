@@ -50,5 +50,17 @@
   "Updated Personal Website v3": {
     "description": "Updated GUI part of website and automated getting my resume from google. Also, the CLI is no longer implemented :/.",
     "time": "Oct 2020"
+  },
+  "Created Kiki": {
+    "description": "Kiki is a CLI that converts PDFs to text-to-speech.",
+    "time": "Oct 2020"
+  },
+  "Started Working On Bowser's Lane Detection": {
+    "description": "Bowser is a self-driving robot by The Robotics Club of Central Florida. I am working on Bowser seeing and staying within lanes on a road.",
+    "time": "Oct 2020"
+  },
+  "Started 2infinity's Website": {
+    "description": "2infinity is my startup software company.",
+    "time": "Oct 2020"
   }
 }

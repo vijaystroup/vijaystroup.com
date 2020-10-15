@@ -13,7 +13,7 @@
   },
   "Personal Website": {
     "image": "internet.svg",
-    "description": "Started off as a fake terminal emulator and has grown to what you see now, serving as a central hub for Vijay Stroup.",
+    "description": "Started off as a fake terminal emulator and has grown to what you see now.",
     "type": "web",
     "link": "https://github.com/VijayStroup/vijaystroupCOM"
   },
@@ -46,5 +46,11 @@
     "description": "A web application to help UCF students study for the UCF Computer Science Entrance Exam, aka The Foundation Exam.",
     "type": "web application",
     "link": "https://github.com/VijayStroup/ucf-fe"
+  },
+  "Kiki": {
+    "image": "pdf.svg",
+    "description": "Named after the Google voice actress Kiki Baessell, Kiki is a CLI tool that converts your PDFs to audio files for you to listen to.",
+    "type": "application",
+    "link": "https://github.com/VijayStroup/Kiki"
   }
 }
