@@ -6,7 +6,7 @@ docker stack rm website
 
 # build image
 printf "\n\nBuilding image\n==============\n"
-docker image rm website
+docker image rm -f website
 docker build -t website .
 sleep 3 # sleep for 3 seconds to make sure image is done completely
 
