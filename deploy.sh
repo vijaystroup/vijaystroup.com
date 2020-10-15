@@ -1,7 +1,6 @@
 #!/bin/sh
 
-# this script is for pushing up new image to GitHub and then invoking the GitHub
-# action
+# this script is called by GitHub Actions to auto-deploy an update
 
 # make venv if not created
 if [ ! -d "venv" ] 
@@ -21,9 +20,9 @@ python3 modules/get_resume.py
 
 # build image
 printf "\n\nBuilding image\n==============\n"
-docker build -t docker.pkg.github.com/vijaystroup/vijaystroupCOM/vijaystroup.com .
-docker push docker.pkg.github.com/vijaystroup/vijaystroupCOM/vijaystroup.com
+docker build -t website:latest .
+sleep 3 # sleep for 3 seconds to make sure image is done completely
 
 # deploy stack
 printf "\n\nDeploying stack\n===============\n"
-docker stack deploy -c docker-compose.traefik.yml web
+docker stack deploy -c docker-compose.traefik.yml website
