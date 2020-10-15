@@ -1,4 +1,4 @@
 # vijaystroupCOM
-My personal website
+My Personal website
 
 [vijaystroup.com](https://vijaystroup.com)
