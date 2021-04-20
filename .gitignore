@@ -1,6 +1,6 @@
 token*
 credentials*
 .DS_Store
-venv
+.venv
 *.pyc
 .vscode
