@@ -13,3 +13,4 @@ with open(f'{PATH}/static/json/timeline.json') as f:
 tools = os.listdir(f'{PATH}/static/images/tools')
 
 app = Flask(__name__)
+app.config['FREEZER_DESTINATION'] = 'docs'
