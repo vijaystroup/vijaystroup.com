@@ -14,3 +14,4 @@ tools = os.listdir(f'{PATH}/static/images/tools')
 
 app = Flask(__name__)
 app.config['FREEZER_DESTINATION'] = 'docs'
+app.config['FREEZER_BASE_URL'] = 'https://vijaystroup.github.io/vijaystroupCOM/'
