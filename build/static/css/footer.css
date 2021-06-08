@@ -1,0 +1,46 @@
+footer {
+  display: flex;
+  background: var(--bg-secondary);
+  justify-content: space-evenly;
+  margin-top: 10rem;
+  padding: 3rem 0;
+}
+
+.footer-title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-headline {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-headline > h1{
+  flex-grow: 1;
+}
+
+footer > div > ul > li{
+  margin-bottom: 5px;
+  opacity: .7;
+}
+
+footer > div > ul > li > a:hover{
+  transition: var(--transition-speed-fast);
+}
+
+footer > div > ul > li > a:hover{
+  opacity: 1;
+  color: var(--blue);
+}
+
+
+@media only screen and (max-width: 790px) {
+  .footer-headline {
+    display: none;
+  }
+
+  .footer-title {
+    text-align: center;
+  }
+}

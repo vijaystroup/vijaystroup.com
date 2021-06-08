@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import render_template
+from flask_frozen import Freezer
 from config import *
 
 
@@ -7,10 +8,11 @@ def home():
     return render_template('home.html', projects=projects, timeline=timeline, tools=tools)
 
 
-@app.route('/terms')
+@app.route('/terms/')
 def terms():
-    return render_template('terms.html')
+    return render_template('terms.html', x=None)
 
 
 if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0')
+    freezer = Freezer(app)
+    freezer.freeze()

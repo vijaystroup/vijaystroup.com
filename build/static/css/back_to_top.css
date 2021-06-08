@@ -1,0 +1,15 @@
+#back-to-top {
+  display: none;
+  font-size: 3rem;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  color: white;
+  cursor: pointer;
+  transition: var(--transition-speed-medium);
+}
+
+#back-to-top:hover {
+  color: var(--red);
+}
