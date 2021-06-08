@@ -8,9 +8,9 @@ def home():
     return render_template('home.html', projects=projects, timeline=timeline, tools=tools)
 
 
-@app.route('/terms/')
+@app.route('vijaystroupCOM/terms/')
 def terms():
-    return render_template('terms.html', x=None)
+    return render_template('terms.html')
 
 
 if __name__ == '__main__':
