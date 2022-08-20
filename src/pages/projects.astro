@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Project from '../components/Project'
+---
+
+<Layout title='Welcome to Astro.'>
+  <div class='grid grid-col-3 gap-2'>
+    <ol>
+      <Project
+        date='01/01/22'
+        title='UCF FE Practice'
+        description='Web application to help UCF students study for the UCF Computer Science Entrance Exam, aka The Foundation Exam.'
+        links={[
+          {
+            type: 'git',
+            href: '#'
+          },
+          {
+            type: 'app',
+            href: '#'
+          }
+        ]}
+      />
+    </ol>
+  </div>
+</Layout>
