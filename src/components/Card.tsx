@@ -67,14 +67,13 @@ export default function Card(props: Props) {
     )
   }
 
-  return (
-    <Fragment>
-      {props.blog && (
-        <a href={`/blog/${props.blog}`}>
-          <Content />
-        </a>
-      )}
-      {!props.blog && <Content />}
-    </Fragment>
-  )
+  if (props.blog) {
+    return (
+      <a href={`/blog/${props.blog}`} class='flex'>
+        <Content />
+      </a>
+    )
+  }
+
+  return <Content />
 }
