@@ -1,5 +1,5 @@
 /** @jsx h */
-import { h } from 'preact'
+import { Fragment, h } from 'preact'
 
 interface Link {
   type: 'git' | 'app'
@@ -10,10 +10,12 @@ export interface Props {
   date: string
   title: string
   description: string
-  links: Link[]
+  href?: string
+  links?: Link[]
+  tools?: string[]
 }
 
-export default function Project(props: Props) {
+export default function Card(props: Props) {
   const GitHubIcon = (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -36,27 +38,43 @@ export default function Project(props: Props) {
     </svg>
   )
 
-  return (
-    <li className='flex space-x-2'>
-      <p className='opacity-50'>{props.date}</p>
-      <div>
-        <div className='flex justify-between'>
-          <h1 className='font-bold'>{props.title}</h1>
-          <div className='flex space-x-2'>
-            {props.links.map(({ href, type }, index) => (
-              <a
-                key={index}
-                href={href}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                {type === 'git' ? GitHubIcon : AppIcon}
-              </a>
-            ))}
+  function Content() {
+    return (
+      <li className='flex space-x-2'>
+        <p className='opacity-50'>{props.date}</p>
+        <div className='w-full'>
+          <div className='flex justify-between'>
+            <h1 className='font-bold'>{props.title}</h1>
+            <div className='flex space-x-2'>
+              {props.links?.map(({ href, type }, index) => (
+                <a
+                  key={index}
+                  href={href}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  {type === 'git' ? GitHubIcon : AppIcon}
+                </a>
+              ))}
+            </div>
           </div>
+          <p>{props.description}</p>
+          {props.tools && (
+            <p className='text-sm opacity-50'>{props.tools.join(', ')}</p>
+          )}
         </div>
-        <p>{props.description}</p>
-      </div>
-    </li>
+      </li>
+    )
+  }
+
+  return (
+    <Fragment>
+      {props.href && (
+        <a href={props.href}>
+          <Content />
+        </a>
+      )}
+      {!props.href && <Content />}
+    </Fragment>
   )
 }
