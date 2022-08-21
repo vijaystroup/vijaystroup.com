@@ -10,7 +10,7 @@ export interface Props {
   date: string
   title: string
   description: string
-  href?: string
+  blog?: string
   links?: Link[]
   tools?: string[]
 }
@@ -69,12 +69,12 @@ export default function Card(props: Props) {
 
   return (
     <Fragment>
-      {props.href && (
-        <a href={props.href}>
+      {props.blog && (
+        <a href={`/blog/${props.blog}`}>
           <Content />
         </a>
       )}
-      {!props.href && <Content />}
+      {!props.blog && <Content />}
     </Fragment>
   )
 }
