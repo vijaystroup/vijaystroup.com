@@ -5,5 +5,6 @@ import preact from '@astrojs/preact'
 export default defineConfig({
   integrations: [tailwind({ config: { applyBaseStyles: false } }), preact()],
   site: 'https://vijaystroup.com',
-  trailingSlash: 'never'
+  trailingSlash: 'never',
+  outDir: './docs'
 })
