@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/Layout.astro
-title: Hello World
+title: Hello World - Vijay Stroup
 markdown: true
 ---
 
