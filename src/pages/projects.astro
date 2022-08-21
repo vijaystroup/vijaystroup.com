@@ -1,26 +1,370 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Project from '../components/Project'
+import Card from '../components/Card'
 ---
 
 <Layout title='Welcome to Astro.'>
-  <div class='grid grid-col-3 gap-2'>
-    <ol>
-      <Project
-        date='01/01/22'
-        title='UCF FE Practice'
-        description='Web application to help UCF students study for the UCF Computer Science Entrance Exam, aka The Foundation Exam.'
-        links={[
-          {
-            type: 'git',
-            href: '#'
-          },
-          {
-            type: 'app',
-            href: '#'
-          }
-        ]}
-      />
-    </ol>
-  </div>
+  <h1 class="text-center font-bold text-3xl mb-8">Projects</h1>
+  <ol class='space-y-4'>
+    <Card
+      date='xx/xx/xx'
+      title='Gator - Log Swamp'
+      description='Easy, secure, unopinionated http logging for any developer application.'
+      links={[
+        {
+          type: 'app',
+          href: '#'
+        }
+      ]}
+      tools={['typescript', 'node.js', 'react.js', 'next.js', 'trpc', 'tailwindcss', 'mysql', 'prisma']}
+    />
+
+    <Card
+      date='08/17/22'
+      title='Gator - To'
+      description='URL shortener.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/gatorsh/to'
+        },
+        {
+          type: 'app',
+          href: 'https://to.gator.sh/'
+        }
+      ]}
+      tools={['typescript', 'node.js', 'react.js', 'next.js', 'trpc', 'tailwindcss', 'mysql', 'prisma']}
+    />
+
+    <Card
+      date='08/04/22'
+      title='Conduction'
+      description='Desktop application to help musical conductors practice and share their movements.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/conductor-motion/conduction'
+        },
+        {
+          type: 'app',
+          href: 'https://github.com/conductor-motion/conduction/releases/tag/V1-Final-Demo'
+        }
+      ]}
+      tools={['unity', 'xbox kinect', 'computer vision']}
+    />
+
+    <Card
+      date='07/24/22'
+      title='Barstool Sports Fullstack Challenge'
+      description='Fullstack challenge from Barstool Sports. The objective is to create a UI for a game where you request game data from an API and use a database to cache the data.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/barstoolsports-fullstack-challenge'
+        },
+        {
+          type: 'app',
+          href: 'https://www.youtube.com/watch?v=cEeoJjDx-HY'
+        }
+      ]}
+      tools={['typescript', 'node.js', 'react.js', 'next.js', 'prisma', 'trpc', 'tailwindcss']}
+    />
+
+    <Card
+      date='07/15/22'
+      title='Gator - Bednotes'
+      description='Patient note keeping for hospitals.'
+      links={[
+        {
+          type: 'app',
+          href: 'https://bednotes.gator.sh/'
+        }
+      ]}
+      tools={['typescript', 'node.js', 'react.js', 'next.js', 'firebase', 'trpc', 'mysql', 'socket.io', 'prisma']}
+    />
+
+    <Card
+      date='06/06/22'
+      title='Gym Music Player'
+      description='Web application to play curated music while working out.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/gym-player'
+        },
+        {
+          type: 'app',
+          href: 'https://gym.vijaystroup.com/'
+        }
+      ]}
+      tools={['javascript', 'node.js', 'react.js']}
+    />
+
+    <Card
+      date='02/16/22'
+      title='Pb Ge111 Island Growth Analysis'
+      description='Physics semiconductor research to find the relationship to temperature and growth rate of Pb on Ge111.'
+      links={[
+        {
+          type: 'git',
+          href: '#'
+        },
+        {
+          type: 'app',
+          href: '#'
+        }
+      ]}
+      tools={['python', 'jupyter notebook', 'numpy', 'matplotlib', 'scipy', 'opencv']}
+    />
+
+    <Card
+      date='12/07/21'
+      title='NS Wave Quadrature Analysis'
+      description='Class project to analyize different methods to solving a complex integral with computational approximation methods.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/ns-quadrature'
+        },
+        {
+          type: 'app',
+          href: 'https://vijaystroup.github.io/ns-quadrature/'
+        }
+      ]}
+      tools={['python', 'jupyter notebook', 'matplotlib', 'numpy', 'scipy', 'pandas']}
+    />
+
+    <Card
+      date='10/28/21'
+      title='Ty'
+      description='Discord bot to help facilitate the UCF Knights Discord Server.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/ty'
+        }
+      ]}
+      tools={['typescript', 'node.js', 'discord.js', 'axios', 'crontab']}
+    />
+
+    <Card
+      date='09/19/21'
+      title='MegaMan'
+      description='Discord bot to help facilitate administration actions for the Roboics Club of Central Florida.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/RoboticsClubatUCF/MegaMan'
+        }
+      ]}
+      tools={['javascript', 'node.js', 'discord.js', 'crontab', 'axios']}
+    />
+
+    <Card
+      date='06/11/21'
+      title='Arianator'
+      description='Discord bot that sends a random picture of Ariana Grande from Getty Images.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/arianator'
+        }
+      ]}
+      tools={['python', 'discord.py', 'aiohttp']}
+    />
+
+    <Card
+      date='06/10/21'
+      title='Contact Manager'
+      description='Class project to add, remove, and edit a contact list.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/cop4331-contact-manager'
+        }
+      ]}
+      tools={['python', 'fastapi', 'jinja2', 'mysql', 'pyjwt']}
+    />
+
+    <Card
+      date='02/27/21'
+      title='Gator - Bookaroo'
+      description={`Mobile SMS booking service that allowed businesses to make appointments with their customers. 
+      Bookaroo also allowed employees to manage their appointments.`}
+      tools={['python' , 'fastapi', 'huey', 'pyjwt', 'pymongo', 'redis', 'sendgrid', 'twilio', 'monogodb', 'node.js', 'react.js', 'next.js']}
+    />
+
+    <Card
+      date='02/07/21'
+      title='Gitmoji'
+      description='CLI to pre-prend emojis to your git commit messages.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/gitmoji'
+        },
+        {
+          type: 'app',
+          href: 'https://github.com/VijayStroup/gitmoji/releases/tag/v0.1.0'
+        }
+      ]}
+      tools={['go', 'cobra']}
+    />
+
+    <Card
+      date='10/31/20'
+      title='Auto Cannon'
+      description='School project to auto aim a cannon to an erupting volcano to plug it up and prevent doomsday.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/auto-cannon'
+        }
+      ]}
+      tools={['python', 'numpy', 'matplotlib']}
+    />
+
+    <Card
+      date='10/20/20'
+      title='Bowser - Lane Tracking'
+      description={`Autonomous lane tracking system for the Bowser robot. The Roboics Club of Central Florida's IGVC competition entry.`}
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/Bowser'
+        }
+      ]}
+      tools={['python', 'numpy', 'matplotlib', 'opencv', 'pillow']}
+    />
+
+    <Card
+      date='10/15/20'
+      title='Kiki'
+      description='CLI to convert pdf documents to audio files you can listen to. Named after the Google voice actress Kiki Baessell.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/Kiki'
+        },
+        {
+          type: 'app',
+          href: 'https://pypi.org/project/kiki/'
+        }
+      ]}
+      tools={['python', 'beautifulsoup', 'typer', 'pypdf2', 'gtts']}
+    />
+
+    <Card
+      date='09/29/20'
+      title='UCF FE Practice'
+      description='Web application to help UCF students study for the UCF Computer Science Entrance Exam, aka The Foundation Exam.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/ucf-fe'
+        },
+        {
+          type: 'app',
+          href: 'https://ucffe.vijaystroup.com/'
+        }
+      ]}
+    />
+
+    <Card
+      date='09/12/20'
+      title='WhichWhale'
+      description='Minimal web server to test load balancing of replicated containers in a docker environment.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/whichwhale'
+        }
+      ]}
+      tools={['python', 'flask', 'docker', 'socket']}
+    />
+
+    <Card
+      date='08/08/20'
+      title='Blastoff'
+      description='GUI of a simulated rocket launch.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/Blastoff'
+        }
+      ]}
+      tools={['c++', 'gtk']}
+    />
+
+    <Card
+      date='07/28/20'
+      title='MarketWatch'
+      description='Script to scrape stock information set on a cronjob and then send a text message to the user if it drops relative to a defined threshold.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/MarketWatch'
+        },
+        {
+          type: 'app',
+          href: 'https://www.youtube.com/watch?v=VYq6Jou3t0k'
+        }
+      ]}
+      tools={['python', 'beautifulsoup', 'crontab']}
+    />
+
+    <Card
+      date='03/17/20'
+      title='Disney Data Science'
+      description={`Looks at three different aspects of Disney. First, what genre and rating combination makes Disney the most money.
+      Secondly, generates plots of ride line waiting time and their averages over differnet time intervals. 
+      Lastly, generates a report of the order, and times of rides you should do given a day.`}
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/Disney-Visualization'
+        }
+      ]}
+      tools={['python', 'numpy', 'matplotlib', 'pandas']}
+    />
+
+    <Card
+      date='10/04/19'
+      title='Cupid'
+      description='Discord bot that manages a marriage system and creates a leaderboard of couples to promote server engagement.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/Cupid-Bot'
+        },
+      ]}
+      tools={['python', 'discord.py', 'pillow', 'mysql']}
+    />
+
+    <Card
+      date='10/04/19'
+      title='Offline Pass'
+      description='GUI offline password manager to save your passwords to your computer locally.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/Offline-Pass'
+        }
+      ]}
+      tools={['python', 'tkinter', 'sqlite', 'hashlib', 'cryptography']}
+    />
+
+    <Card
+      date='04/20/18'
+      title='Physics Problem Solver'
+      description='Script to solve basic common physics problems given parameters.'
+      links={[
+        {
+          type: 'git',
+          href: 'https://github.com/VijayStroup/Physics_Problem_Solver_Basic'
+        }
+      ]}
+      tools={['python']}
+    />
+  </ol>
 </Layout>
