@@ -18,7 +18,9 @@ const { title, markdown } = Astro.props.frontmatter || Astro.props
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/x-icon' href='/favicon.ico' />
     <meta name='generator' content={Astro.generator} />
-    <meta name='description' content='The kid your mom always compares you to.'
+    <meta
+      name='description'
+      content='The kid your mom always compares you to.'
     />
     <meta property='og:title' content={title} />
     <meta
@@ -33,7 +35,7 @@ const { title, markdown } = Astro.props.frontmatter || Astro.props
     <meta name='twitter:card' content='summary_large_image' />
     <title>{title}</title>
   </head>
-  <body class='mx-[5%] md:mx-[15%] lg:mx-[20%] min-h-screen flex flex-col'>
+  <body class='mx-[5%] md:mx-[25%] lg:mx-[35%] min-h-screen flex flex-col'>
     <Header />
     <main class={`mt-8 ${markdown ? 'prose' : ''}`}>
       <slot />
