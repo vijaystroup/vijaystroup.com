@@ -1,45 +1,37 @@
 ---
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
-import '../styles/global.css'
+import "../styles/global.css";
 
-export interface Props {
-  title: string
-  markdown?: boolean
-}
-
-const { title, markdown } = Astro.props.frontmatter || Astro.props
+const { title, ...props } = Astro.props;
 ---
 
-<!DOCTYPE html>
-<html lang='en'>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset='UTF-8' />
-    <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/x-icon' href='/favicon.ico' />
-    <meta name='generator' content={Astro.generator} />
-    <meta
-      name='description'
-      content='The kid your mom always compares you to.'
-    />
-    <meta property='og:title' content={title} />
-    <meta
-      property='og:description'
-      content='The kid your mom always compares you to.'
-    />
-    <meta property='og:url' content='https://vijaystorup.com' />
-    <meta property='og:type' content='website' />
-    <meta property='og:image' content='/og.png' />
-    <meta property='og:site_name' content={title} />
-    <meta name='robots' content='index,follow' />
-    <meta name='twitter:card' content='summary_large_image' />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta name="description" content="Vijay Stroup's personal website" />
+
+    <!-- Open Graph tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vijaystroup.com" />
+    <meta property="og:title" content={title} />
+    <meta property="og:site_name" content={title} />
+    <meta
+      property="og:description"
+      content="Vijay Stroup's personal website."
+    />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="robots" content="index,follow" />
   </head>
-  <body class='mx-[5%] md:mx-[25%] lg:mx-[35%] min-h-screen flex flex-col'>
-    <Header />
-    <main class={`mt-8 ${markdown ? 'prose' : ''}`}>
-      <slot />
-    </main>
-    <Footer />
+  <body class="bg-black text-stone-300 font-mono">
+    <slot />
   </body>
 </html>

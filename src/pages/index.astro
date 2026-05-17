@@ -1,41 +1,65 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from "../layouts/Layout.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout title='Vijay Stroup'>
-  <p>
-    Hi, I'm Vijay. I'm currently a student at the University of Central Florida.
-    I am a Pre-Med student with Bachelors of Sciences in Physics and Computer
-    Science.
+<Layout title="Vijay Stroup">
+  <div class="w-xl m-10 sm:mx-auto">
+    <h1 class="text-3xl font-bold">Vijay Stroup</h1>
+    <div class="mt-2 flex gap-4">
+      <a href="https://www.linkedin.com/in/vijaystroup" target="_blank"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          class="w-4 h-4 stroke-stone-300 fill-stone-300"
+        >
+          <path
+            d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z"
+            fill-rule="evenodd"></path>
+        </svg></a
+      >
+      <a href="https://github.com/vijaystroup" target="_blank"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          class="w-4 h-4 stroke-stone-300 fill-stone-300"
+        >
+          <path
+            d="M16,2.345c7.735,0,14,6.265,14,14-.002,6.015-3.839,11.359-9.537,13.282-.7,.14-.963-.298-.963-.665,0-.473,.018-1.978,.018-3.85,0-1.312-.437-2.152-.945-2.59,3.115-.35,6.388-1.54,6.388-6.912,0-1.54-.543-2.783-1.435-3.762,.14-.35,.63-1.785-.14-3.71,0,0-1.173-.385-3.85,1.435-1.12-.315-2.31-.472-3.5-.472s-2.38,.157-3.5,.472c-2.677-1.802-3.85-1.435-3.85-1.435-.77,1.925-.28,3.36-.14,3.71-.892,.98-1.435,2.24-1.435,3.762,0,5.355,3.255,6.563,6.37,6.913-.403,.35-.77,.963-.893,1.872-.805,.368-2.818,.963-4.077-1.155-.263-.42-1.05-1.452-2.152-1.435-1.173,.018-.472,.665,.017,.927,.595,.332,1.277,1.575,1.435,1.978,.28,.787,1.19,2.293,4.707,1.645,0,1.173,.018,2.275,.018,2.607,0,.368-.263,.787-.963,.665-5.719-1.904-9.576-7.255-9.573-13.283,0-7.735,6.265-14,14-14Z"
+          ></path>
+        </svg></a
+      >
+      <a href="https://www.youtube.com/@vijaystroup" target="_blank"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          class="w-4 h-4 stroke-stone-300 fill-stone-300"
+        >
+          <path
+            d="M31.331,8.248c-.368-1.386-1.452-2.477-2.829-2.848-2.496-.673-12.502-.673-12.502-.673,0,0-10.007,0-12.502,.673-1.377,.37-2.461,1.462-2.829,2.848-.669,2.512-.669,7.752-.669,7.752,0,0,0,5.241,.669,7.752,.368,1.386,1.452,2.477,2.829,2.847,2.496,.673,12.502,.673,12.502,.673,0,0,10.007,0,12.502-.673,1.377-.37,2.461-1.462,2.829-2.847,.669-2.512,.669-7.752,.669-7.752,0,0,0-5.24-.669-7.752ZM12.727,20.758V11.242l8.364,4.758-8.364,4.758Z"
+          ></path>
+        </svg></a
+      >
+    </div>
 
-    <br /><br />
-
-    I have a passion for entrepreneurship and am always thinking of new things
-    to build. I am self taught in the languages and tools I use to make things.
-    My main programming languages are Python and Typescript. I utilize these
-    languages and frameworks/libraries built on top of them to make an array of
-    different applications. <a href='/projects' class='underline'
-      >Check out my projects here.
-    </a>
-
-    <br /><br />
-
-    I am always looking to learn new things and expand my knowledge. I am
-    currently trying to launch a startup called <a
-      href='https://gator.sh/'
-      target='_blank'
-      rel='noopener noreferrer'
-      class='underline'
-      >Gator.
-    </a>
-
-    <br /><br />
-
-    There are many things I would like to do. I'm just getting started.
-  </p>
-
-  <button
-    class='flex px-2 py-1 mx-auto mt-4 text-xl rounded shadow-md bg-slate-100'
-    ><a href='/resume'>Resume</a>
-  </button>
+    <h2 class="mt-10 underline underline-offset-2 mb-2 text-sm">Tools</h2>
+    <ul class="flex gap-10">
+      <li>
+        <a href="https://ucffe.vijaystroup.com" target="_blank">UCF FE</a>
+      </li>
+      <li><a href="https://gym.vijaystroup.com" target="_blank">Gym</a></li>
+      <li>
+        <a href="https://ommcs.vijaystroup.com" target="_blank">OMM CS</a>
+      </li>
+      <li><a href="https://cal.vijaystroup.com" target="_blank">Cal</a></li>
+    </ul>
+  </div>
 </Layout>

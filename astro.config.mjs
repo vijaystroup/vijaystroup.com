@@ -1,10 +1,15 @@
-import { defineConfig } from 'astro/config'
-import tailwind from '@astrojs/tailwind'
-import preact from '@astrojs/preact'
+// @ts-check
+import { defineConfig } from 'astro/config';
 
+import tailwindcss from '@tailwindcss/vite';
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind({ config: { applyBaseStyles: false } }), preact()],
   site: 'https://vijaystroup.com',
   trailingSlash: 'never',
-  outDir: './docs'
-})
+  outDir: './docs',
+
+  vite: {
+    plugins: [tailwindcss()]
+  }
+});
